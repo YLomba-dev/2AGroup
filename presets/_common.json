@@ -1,0 +1,92 @@
+{
+  "_note": "Shared intake question blocks. Presets list the blocks they need in 'blocks'. Questions never collect G-28, attorney, preparer, interpreter or translator information: staff complete those parts by hand.",
+  "blocks": {
+    "applicant": {
+      "title": "About you",
+      "questions": [
+        { "id": "familyName", "label": "Family name (last name)", "type": "text", "required": true },
+        { "id": "givenName", "label": "Given name (first name)", "type": "text", "required": true },
+        { "id": "middleName", "label": "Middle name", "type": "text" },
+        { "id": "otherNames", "label": "Other names you have used (maiden name, aliases, nicknames)", "type": "textarea" },
+        { "id": "dob", "label": "Date of birth", "type": "date", "required": true },
+        { "id": "sex", "label": "Sex", "type": "select", "options": ["Female", "Male"], "required": true },
+        { "id": "cityOfBirth", "label": "City or town of birth", "type": "text", "required": true },
+        { "id": "countryOfBirth", "label": "Country of birth", "type": "text", "required": true },
+        { "id": "citizenship", "label": "Country of citizenship or nationality", "type": "text", "required": true, "help": "This is not always the country where you were born. If you have no citizenship, write \"stateless\"." },
+        { "id": "aNumber", "label": "A-Number (if any)", "type": "text", "help": "Starts with A and has 8 or 9 digits. Leave blank if you never had one." },
+        { "id": "uscisOnlineAccount", "label": "USCIS Online Account Number (if any)", "type": "text", "help": "Only if you previously filed online or received an Account Access Notice. It is not the same as an A-Number." },
+        { "id": "ssn", "label": "U.S. Social Security number (if any)", "type": "text", "sensitive": true },
+        { "id": "maritalStatus", "label": "Current marital status", "type": "select", "options": ["Single, never married", "Married", "Divorced", "Widowed", "Separated", "Marriage annulled"], "required": true }
+      ]
+    },
+    "address": {
+      "title": "Address and contact",
+      "questions": [
+        { "id": "street", "label": "Street number and name (and apartment)", "type": "text", "required": true },
+        { "id": "city", "label": "City", "type": "text", "required": true },
+        { "id": "state", "label": "State", "type": "text", "required": true },
+        { "id": "zip", "label": "ZIP code", "type": "text", "required": true },
+        { "id": "safeMailingAddress", "label": "Safe mailing address, if different (a place where you can safely receive mail)", "type": "textarea" },
+        { "id": "phone", "label": "Daytime phone", "type": "text", "required": true },
+        { "id": "email", "label": "Email", "type": "text" },
+        { "id": "addressHistory", "label": "Addresses for the last 5 years (from - to, full address)", "type": "textarea", "required": true }
+      ]
+    },
+    "entry": {
+      "title": "Entry to the United States",
+      "questions": [
+        { "id": "lastArrivalDate", "label": "Date of your last arrival in the U.S.", "type": "date", "required": true },
+        { "id": "lastArrivalPlace", "label": "Place of last arrival (city and state, or port of entry)", "type": "text", "required": true },
+        { "id": "entryManner", "label": "How did you enter?", "type": "select", "options": ["With a visa (admitted)", "Paroled", "Without inspection", "Other / not sure"], "required": true },
+        { "id": "i94Number", "label": "Form I-94 number (if any)", "type": "text", "help": "You can print your I-94 at i94.cbp.dhs.gov." },
+        { "id": "currentStatus", "label": "Current immigration status (for example B-2, F-1, parole, none)", "type": "text", "required": true },
+        { "id": "statusExpires", "label": "Date your status or I-94 expires (if any)", "type": "date" },
+        { "id": "passportNumber", "label": "Passport or travel document number", "type": "text" },
+        { "id": "passportCountry", "label": "Country that issued the passport", "type": "text" },
+        { "id": "passportExpiry", "label": "Passport expiration date", "type": "date" }
+      ]
+    },
+    "criminal": {
+      "title": "Arrests and immigration history",
+      "questions": [
+        { "id": "everArrested", "label": "Have you EVER been arrested, cited, detained, charged or convicted anywhere in the world?", "type": "yesno", "required": true, "help": "Include arrests where no charges were filed and records that were sealed or expunged. Your attorney will review this privately." },
+        { "id": "arrestDetails", "label": "Describe each arrest or charge (date, place, what happened, outcome)", "type": "textarea", "when": { "question": "everArrested", "equals": "Yes" }, "required": true },
+        { "id": "everInProceedings", "label": "Have you ever been in immigration court (removal, deportation or exclusion proceedings)?", "type": "yesno", "required": true },
+        { "id": "priorFilings", "label": "Prior USCIS applications or petitions filed for you (form, year, receipt number, result)", "type": "textarea" }
+      ]
+    },
+    "biographic": {
+      "title": "Physical description (for biometrics)",
+      "questions": [
+        { "id": "ethnicity", "label": "Ethnicity", "type": "select", "options": ["Hispanic or Latino", "Not Hispanic or Latino"], "required": true },
+        { "id": "race", "label": "Race (you may list more than one)", "type": "text", "required": true },
+        { "id": "heightFtIn", "label": "Height (feet and inches, for example 5 ft 9 in)", "type": "text", "required": true },
+        { "id": "weightLbs", "label": "Weight in pounds", "type": "text", "required": true },
+        { "id": "eyeColor", "label": "Eye color", "type": "text", "required": true },
+        { "id": "hairColor", "label": "Hair color", "type": "text", "required": true }
+      ]
+    },
+    "family": {
+      "title": "Family",
+      "questions": [
+        { "id": "spouseName", "label": "Current spouse's full name", "type": "text", "when": { "question": "maritalStatus", "equals": "Married" }, "required": true },
+        { "id": "spouseDob", "label": "Spouse's date of birth", "type": "date", "when": { "question": "maritalStatus", "equals": "Married" } },
+        { "id": "marriageDate", "label": "Date of current marriage", "type": "date", "when": { "question": "maritalStatus", "equals": "Married" }, "required": true },
+        { "id": "marriagePlace", "label": "Place of current marriage (city, state/province, country)", "type": "text", "when": { "question": "maritalStatus", "equals": "Married" } },
+        { "id": "priorMarriages", "label": "Prior marriages for you or your spouse (names, dates, how each ended)", "type": "textarea" },
+        { "id": "children", "label": "Your children (full name, date of birth, country of birth, where they live now)", "type": "textarea" },
+        { "id": "parents", "label": "Your parents (full names, dates and countries of birth)", "type": "textarea" }
+      ]
+    },
+    "employment": {
+      "title": "Work history",
+      "questions": [
+        { "id": "employmentHistory", "label": "Employment for the last 5 years, most recent first (employer, address, job title, from - to)", "type": "textarea", "required": true }
+      ]
+    }
+  },
+  "commonChecklist": [
+    { "id": "id_document", "label": "Government-issued photo ID (passport biographic page, even if expired)", "required": true, "help": "A clear copy of the page with your photo." },
+    { "id": "translations_note", "label": "Any document not in English (staff will arrange certified translations)", "required": false, "staffOnly": true, "help": "USCIS requires a full English translation with the translator's certification for every foreign-language document. Staff add translator certifications by hand." }
+  ]
+}

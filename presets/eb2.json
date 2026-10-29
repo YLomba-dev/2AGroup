@@ -1,0 +1,54 @@
+{
+  "id": "eb2",
+  "name": "EB-2 (I-140, PERM or NIW)",
+  "summary": "Second-preference employment petition for an advanced-degree professional or person of exceptional ability, with a labor certification (PERM) or a National Interest Waiver.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-140", "title": "Immigrant Petition for Alien Workers", "edition": "06/07/24", "role": "main", "source": "i-140instr.txt" },
+    { "form": "ETA-9089 Appendix A", "title": "Appendix A (NIW)", "edition": "DOL form, expires 02/28/29", "role": "conditional", "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "note": "Signed by petitioner and beneficiary per USCIS I-140 checklist (11/06/2024). Not auto-filled." },
+    { "form": "I-485", "title": "Application to Adjust Status", "edition": "09/18/26", "role": "optional", "when": { "question": "concurrentI485", "equals": "Yes" }, "note": "Only if the priority date is current (Visa Bulletin)." }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-140.", "fee": "See Form G-1055 at uscis.gov/g-1055 (includes Asylum Program Fee for employer petitioners where applicable)." },
+  "blocks": ["applicant", "address", "entry", "family", "employment", "criminal"],
+  "questions": [
+    { "section": "Track", "id": "track", "label": "Which EB-2 track?", "type": "select", "options": ["National Interest Waiver (NIW)", "PERM labor certification (employer)"], "required": true },
+    { "section": "Track", "id": "qualifyingBasis", "label": "How do you qualify?", "type": "select", "options": ["Advanced degree (master's or higher)", "Bachelor's degree + 5 years progressive experience", "Exceptional ability (3 of 6 criteria)"], "required": true },
+    { "section": "Track", "id": "permCertDate", "label": "Date the labor certification was certified by DOL", "type": "date", "when": { "question": "track", "equals": "PERM labor certification (employer)" }, "required": true },
+    { "section": "Track", "id": "employerName", "label": "Employer name and EIN", "type": "text", "when": { "question": "track", "equals": "PERM labor certification (employer)" }, "required": true },
+    { "section": "Track", "id": "offeredWage", "label": "Offered wage", "type": "text", "when": { "question": "track", "equals": "PERM labor certification (employer)" } },
+    { "section": "Your proposed work", "id": "fieldOfEndeavor", "label": "Your field and job title", "type": "text", "required": true },
+    { "section": "Your proposed work", "id": "proposedEndeavor", "label": "Describe the work you will do in the U.S. (the proposed endeavor)", "type": "textarea", "required": true },
+    { "section": "Your proposed work", "id": "nationalImportance", "label": "Why is this work important to the United States (substantial merit and national importance)?", "type": "textarea", "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "required": true },
+    { "section": "Your proposed work", "id": "wellPositioned", "label": "Why are you well positioned to do it (education, track record, plan, funding, interest from others)?", "type": "textarea", "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "required": true },
+    { "section": "Your proposed work", "id": "waiverBenefit", "label": "Why would it benefit the U.S. to waive the job offer and labor certification?", "type": "textarea", "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "required": true },
+    { "section": "Filing plan", "id": "priorityDate", "label": "Priority date (if already known)", "type": "date" },
+    { "section": "Filing plan", "id": "concurrentI485", "label": "File I-485 at the same time (if your priority date is current)?", "type": "yesno", "required": true }
+  ],
+  "checklist": [
+    { "id": "degree_records", "label": "Diplomas and transcripts (official academic records)", "required": true, "source": "I-140 Instructions 06/07/24, Initial Evidence item 4.A(1)" },
+    { "id": "credential_evaluation", "label": "Foreign degree credential evaluation", "required": false, "help": "Needed if your degree is from outside the U.S., to show U.S. equivalency." },
+    { "id": "experience_letters", "label": "Employer letters showing experience (writer's name, address, title, and your specific duties)", "required": true, "help": "For bachelor's + 5 years: show progressive post-degree experience. For exceptional ability: 10 years full-time.", "source": "I-140 Instructions 06/07/24, item 4.A(1)-(2); USCIS I-140 checklist, General Requirements" },
+    { "id": "exceptional_ability", "label": "At least 3 of: license or certification, high salary, memberships, recognition by peers or government", "required": true, "when": { "question": "qualifyingBasis", "equals": "Exceptional ability (3 of 6 criteria)" }, "source": "I-140 Instructions 06/07/24, item 4.A(2)(a)-(f)" },
+    { "id": "cv", "label": "CV or resume", "required": true },
+    { "id": "eta9089_final", "label": "Certified ETA-9089 Final Determination (original, signed)", "required": true, "when": { "question": "track", "equals": "PERM labor certification (employer)" }, "help": "Must reach USCIS within 180 days of certification.", "source": "I-140 Instructions 06/07/24, General Evidence item 1" },
+    { "id": "ability_to_pay", "label": "Employer's ability to pay: annual reports, federal tax returns or audited financials (or CFO letter if 100+ employees)", "required": true, "when": { "question": "track", "equals": "PERM labor certification (employer)" }, "source": "I-140 Instructions 06/07/24, General Evidence item 2" },
+    { "id": "eta9089_appendix_a", "label": "ETA-9089 Appendix A, signed", "required": true, "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "source": "USCIS I-140 Checklist (11/06/2024), NIW section" },
+    { "id": "niw_merit_importance", "label": "Evidence the endeavor has substantial merit and national importance (reports, policy documents, industry data)", "required": true, "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "source": "USCIS I-140 Checklist (11/06/2024), NIW" },
+    { "id": "niw_well_positioned", "label": "Evidence you are well positioned (publications, citations, patents, contracts, funding, business plan, letters of interest)", "required": true, "when": { "question": "track", "equals": "National Interest Waiver (NIW)" }, "source": "USCIS I-140 Checklist (11/06/2024), NIW" },
+    { "id": "recommendation_letters", "label": "Expert recommendation letters", "required": false, "when": { "question": "track", "equals": "National Interest Waiver (NIW)" } },
+    { "id": "i94_status", "label": "I-94 and current status documents (if in the U.S.)", "required": false, "source": "I-140 Instructions 06/07/24, General Evidence item 3" }
+  ],
+  "coverLetter": {
+    "re": "Form I-140, Immigrant Petition for Alien Workers - EB-2 ({{track}})",
+    "request": "We respectfully submit the enclosed Form I-140 for {{givenName}} {{familyName}}, a {{fieldOfEndeavor}}, seeking classification as a member of the professions holding an advanced degree or a person of exceptional ability.",
+    "points": [
+      "The beneficiary qualifies for EB-2 classification: {{qualifyingBasis}}.",
+      "{{#nationalImportance}}The proposed endeavor has substantial merit and national importance.{{/nationalImportance}}",
+      "{{#wellPositioned}}The beneficiary is well positioned to advance the proposed endeavor.{{/wellPositioned}}",
+      "{{#waiverBenefit}}On balance, it would be beneficial to the United States to waive the job offer and labor certification requirements.{{/waiverBenefit}}",
+      "{{#permCertDate}}The enclosed labor certification was certified on {{permCertDate}} and remains valid.{{/permCertDate}}"
+    ]
+  },
+  "rules": ["permValidity", "visaBulletinNote"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

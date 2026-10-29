@@ -1,0 +1,50 @@
+{
+  "id": "i-360",
+  "name": "I-360 Special Immigrant (Religious Worker, SIJ, Widow(er))",
+  "summary": "Non-VAWA I-360 categories the office handles: special immigrant religious worker, special immigrant juvenile, and widow(er) of a U.S. citizen. VAWA has its own preset.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-360", "title": "Petition for Amerasian, Widow(er), or Special Immigrant", "edition": "01/20/25", "role": "main", "source": "i-360instr.txt" },
+    { "form": "I-485", "title": "Application to Adjust Status", "edition": "09/18/26", "role": "optional", "when": { "question": "concurrentI485", "equals": "Yes" } }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-360 (address depends on category).", "fee": "See Form G-1055 at uscis.gov/g-1055. Some categories (for example SIJ) have no fee." },
+  "blocks": ["applicant", "address", "entry", "family", "criminal"],
+  "questions": [
+    { "section": "Category", "id": "category", "label": "Which I-360 category?", "type": "select", "options": ["Religious worker", "Special immigrant juvenile (SIJ)", "Widow(er) of a U.S. citizen"], "required": true },
+    { "section": "Religious worker", "id": "orgName", "label": "Petitioning religious organization (name, address, EIN)", "type": "textarea", "when": { "question": "category", "equals": "Religious worker" }, "required": true },
+    { "section": "Religious worker", "id": "position", "label": "Position", "type": "select", "options": ["Minister", "Religious vocation", "Religious occupation"], "when": { "question": "category", "equals": "Religious worker" }, "required": true },
+    { "section": "Religious worker", "id": "denomination", "label": "Religious denomination", "type": "text", "when": { "question": "category", "equals": "Religious worker" }, "required": true },
+    { "section": "Religious worker", "id": "membershipSince", "label": "Member of the denomination since", "type": "date", "when": { "question": "category", "equals": "Religious worker" }, "required": true },
+    { "section": "Religious worker", "id": "compensation", "label": "How will you be paid or supported (salary, housing, stipend)?", "type": "textarea", "when": { "question": "category", "equals": "Religious worker" }, "required": true },
+    { "section": "Special immigrant juvenile", "id": "courtName", "label": "Juvenile court, case number and order date", "type": "textarea", "when": { "question": "category", "equals": "Special immigrant juvenile (SIJ)" }, "required": true },
+    { "section": "Special immigrant juvenile", "id": "inHhsCustody", "label": "Are you in the custody of HHS (ORR)?", "type": "yesno", "when": { "question": "category", "equals": "Special immigrant juvenile (SIJ)" } },
+    { "section": "Widow(er)", "id": "spouseDeathDate", "label": "Date your U.S. citizen spouse died", "type": "date", "when": { "question": "category", "equals": "Widow(er) of a U.S. citizen" }, "required": true },
+    { "section": "Widow(er)", "id": "remarried", "label": "Have you remarried?", "type": "yesno", "when": { "question": "category", "equals": "Widow(er) of a U.S. citizen" }, "required": true },
+    { "section": "Filing plan", "id": "concurrentI485", "label": "File Form I-485 at the same time?", "type": "yesno", "required": true }
+  ],
+  "checklist": [
+    { "id": "irs_determination", "label": "Current IRS tax-exempt determination letter (organization or group)", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737 (07/15/22) Filing Checklist; I-360 Instructions 01/20/25, Religious Worker items 1-3" },
+    { "id": "religious_nature", "label": "If exempt as other than a religious organization: organizing documents and literature showing religious purpose, and the Denomination Certification", "required": false, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737; I-360 Instructions item 3.A-D" },
+    { "id": "employer_attestation", "label": "Employer Attestation (Part 9 of I-360), signed by an authorized official", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "help": "Signed by the organization, not by the client.", "source": "M-737; I-360 Instructions item 4" },
+    { "id": "compensation_evidence", "label": "Verifiable evidence of compensation (pay records, budget, housing letter)", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737; I-360 Instructions item 5" },
+    { "id": "membership_2yrs", "label": "Proof of membership in the denomination for the 2 years before filing", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737; I-360 Instructions item 6" },
+    { "id": "work_2yrs", "label": "Proof of continuous religious work (after age 14) for the 2 years before filing", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737; I-360 Instructions item 7" },
+    { "id": "qualifications", "label": "Proof you are qualified for the position (ordination, training, certificates)", "required": true, "when": { "question": "category", "equals": "Religious worker" }, "source": "M-737; I-360 Instructions item 8" },
+    { "id": "sij_birth_certificate", "label": "Birth certificate or other proof of age", "required": true, "when": { "question": "category", "equals": "Special immigrant juvenile (SIJ)" }, "source": "I-360 Instructions 01/20/25, SIJ item 1" },
+    { "id": "sij_court_order", "label": "Juvenile court order with the required findings (dependency/custody, reunification not viable, best interest)", "required": true, "when": { "question": "category", "equals": "Special immigrant juvenile (SIJ)" }, "source": "I-360 Instructions 01/20/25, SIJ item 2" },
+    { "id": "hhs_consent", "label": "HHS written consent (if in HHS custody and the order changed custody or placement)", "required": true, "when": { "question": "inHhsCustody", "equals": "Yes" }, "source": "I-360 Instructions 01/20/25, SIJ item 3" },
+    { "id": "widow_marriage_cert", "label": "Marriage certificate and proof prior marriages ended", "required": true, "when": { "question": "category", "equals": "Widow(er) of a U.S. citizen" }, "source": "I-360 Instructions 01/20/25, Widow(er) item 1" },
+    { "id": "widow_spouse_citizenship", "label": "Proof the spouse was a U.S. citizen", "required": true, "when": { "question": "category", "equals": "Widow(er) of a U.S. citizen" }, "source": "I-360 Instructions 01/20/25, Widow(er) item 2" },
+    { "id": "widow_death_certificate", "label": "Spouse's death certificate", "required": true, "when": { "question": "category", "equals": "Widow(er) of a U.S. citizen" }, "source": "I-360 Instructions 01/20/25, Widow(er) item 3" }
+  ],
+  "coverLetter": {
+    "re": "Form I-360, Petition for Special Immigrant - {{category}}",
+    "request": "We respectfully submit the enclosed Form I-360 on behalf of {{givenName}} {{familyName}} in the category: {{category}}.",
+    "points": [
+      "The beneficiary meets each eligibility requirement of the category, as shown by the enclosed evidence.",
+      "{{#position}}The beneficiary will work as a {{position}} for a bona fide nonprofit religious organization and has the required two years of membership and work.{{/position}}"
+    ]
+  },
+  "rules": ["widowTwoYear"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

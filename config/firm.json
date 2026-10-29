@@ -1,0 +1,9 @@
+{
+  "_note": "Letterhead used on cover letters. Replace the bracketed values with the office's real details. Attorney signature is always left for the attorney to sign by hand.",
+  "name": "2A GROUP CORP",
+  "addressLines": ["[Street address]", "[City, State ZIP]"],
+  "phone": "[Phone]",
+  "email": "[Email]",
+  "attorneyName": "[Attorney name], Esq.",
+  "attorneyBar": "[Bar number and state]"
+}

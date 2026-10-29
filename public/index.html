@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f3a5f">
+  <title>2A Group Corp Portal</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card card"><div class="auth-brand">2A GROUP CORP</div><p class="muted">Opening your portal...</p></main>
+  <script src="/vendor/supabase.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // Signed in: go to the right home page. Otherwise: sign in.
+    App.requireUser().then((me) => { location.replace(me.role === 'client' ? 'client.html' : 'staff.html'); });
+  </script>
+</body>
+</html>

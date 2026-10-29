@@ -1,0 +1,50 @@
+{
+  "id": "t-visa",
+  "name": "T-Visa (I-914)",
+  "summary": "T nonimmigrant status for victims of a severe form of trafficking in persons, with optional law enforcement declaration (Supplement B) and derivative family members (Supplement A).",
+  "confidential": true,
+  "confidentialityNote": "Protected by 8 U.S.C. 1367. Restricted case. Never contact or name the traffickers in any notice.",
+  "forms": [
+    { "form": "I-914", "title": "Application for T Nonimmigrant Status", "edition": "09/14/26", "role": "main", "source": "i-914instr.txt" },
+    { "form": "I-914 Supplement A", "title": "Application for Family Member of T-1 Recipient", "edition": "09/14/26", "role": "conditional", "when": { "question": "includeFamily", "equals": "Yes" }, "note": "One per family member; may also be filed later (I-914 Instructions)." },
+    { "form": "I-914 Supplement B", "title": "Declaration for Trafficking Victim", "edition": "09/14/26", "role": "optional", "when": { "question": "hasSuppB", "equals": "Yes" }, "note": "Optional. Completed and signed by a law enforcement official, never auto-filled (I-914B Instructions 09/14/26)." },
+    { "form": "I-192", "title": "Application for Advance Permission to Enter as a Nonimmigrant", "edition": "verify on uscis.gov/i-192", "role": "conditional", "when": { "question": "inadmissibilityConcern", "equals": "Yes" }, "note": "Waiver of inadmissibility if needed; attorney decides." }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-914.", "fee": "See Form G-1055 at uscis.gov/g-1055." },
+  "blocks": ["applicant", "address", "entry", "family", "criminal"],
+  "questions": [
+    { "section": "Safety", "id": "safeToContactHome", "label": "Is it safe for us to call, text or mail you at the address and phone you gave?", "type": "yesno", "required": true },
+    { "section": "What happened", "id": "traffickingType", "label": "Type of trafficking", "type": "select", "options": ["Labor trafficking", "Sex trafficking", "Both", "Not sure"], "required": true },
+    { "section": "What happened", "id": "traffickingNarrative", "label": "Describe what happened: how you were recruited, what you were forced to do, how long, who was responsible, and how you got away", "type": "textarea", "required": true },
+    { "section": "What happened", "id": "presenceOnAccount", "label": "How is your being in the U.S. connected to the trafficking?", "type": "textarea", "required": true },
+    { "section": "What happened", "id": "hardship", "label": "What harm do you fear if you are sent back? (danger, medical needs, loss of services, retaliation)", "type": "textarea", "required": true },
+    { "section": "Law enforcement", "id": "reportedToLE", "label": "Have you reported the trafficking or helped police, FBI, DOL or prosecutors?", "type": "yesno", "required": true },
+    { "section": "Law enforcement", "id": "leDetails", "label": "Agency, officer name, case number and what you did to help", "type": "textarea", "when": { "question": "reportedToLE", "equals": "Yes" } },
+    { "section": "Law enforcement", "id": "hasSuppB", "label": "Do you have (or can you get) a signed Supplement B from law enforcement?", "type": "yesno", "required": true },
+    { "section": "Law enforcement", "id": "traumaException", "label": "If you could not help law enforcement, was it because of physical or psychological trauma, or were you under 18?", "type": "textarea", "when": { "question": "reportedToLE", "equals": "No" } },
+    { "section": "Family", "id": "includeFamily", "label": "Do you want to include family members (Supplement A)?", "type": "yesno", "required": true },
+    { "section": "Family", "id": "inadmissibilityConcern", "label": "Staff only: any ground of inadmissibility to waive (I-192)?", "type": "yesno", "staffOnly": true }
+  ],
+  "checklist": [
+    { "id": "personal_statement", "label": "Your personal statement (required; staff will help you write it)", "required": true, "help": "Describes the trafficking, how your presence relates to it, the hardship you fear, and your cooperation with law enforcement.", "source": "I-914 Instructions 09/14/26, Personal Statement" },
+    { "id": "entry_document", "label": "Any document showing how you entered the U.S.", "required": false, "help": "Required if you have it or can get it.", "source": "I-914 Instructions 09/14/26, Evidence to Establish T Nonimmigrant Status" },
+    { "id": "supp_b_signed", "label": "Signed Supplement B from a law enforcement officer", "required": true, "when": { "question": "hasSuppB", "equals": "Yes" }, "source": "I-914 Supplement B Instructions 09/14/26" },
+    { "id": "cooperation_evidence", "label": "Proof you helped law enforcement (police reports, court documents, subpoenas, travel reimbursement forms, Continued Presence)", "required": false, "source": "I-914 Instructions 09/14/26, Evidence of Cooperation" },
+    { "id": "trauma_evidence", "label": "Evidence of trauma (statement from a doctor, counselor, social worker or victim advocate; medical records)", "required": true, "when": { "question": "reportedToLE", "equals": "No" }, "source": "I-914 Instructions 09/14/26, trauma exception items 1-10" },
+    { "id": "age_evidence", "label": "Proof of age (birth certificate or passport) if under 18", "required": false, "source": "I-914 Instructions 09/14/26, under 18" },
+    { "id": "trafficking_evidence", "label": "Other evidence of the trafficking (messages, pay records, photos, news articles, witness statements)", "required": false, "confidential": true, "source": "I-914 Instructions 09/14/26, any credible evidence (8 CFR 214.204(l))" },
+    { "id": "family_relationship", "label": "Relationship documents for each family member (marriage and birth certificates)", "required": true, "when": { "question": "includeFamily", "equals": "Yes" }, "source": "I-914 Instructions 09/14/26, Evidence to Establish Derivative T Nonimmigrant Status" }
+  ],
+  "coverLetter": {
+    "re": "Form I-914, Application for T Nonimmigrant Status - CONFIDENTIAL, protected under 8 U.S.C. 1367",
+    "request": "We respectfully submit the enclosed Form I-914 on behalf of {{givenName}} {{familyName}}, a victim of a severe form of trafficking in persons ({{traffickingType}}).",
+    "points": [
+      "The applicant is or has been a victim of a severe form of trafficking in persons.",
+      "The applicant is physically present in the United States on account of trafficking.",
+      "The applicant has complied with reasonable requests for assistance from law enforcement, or an exception applies.",
+      "The applicant would suffer extreme hardship involving unusual and severe harm upon removal."
+    ]
+  },
+  "rules": [],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

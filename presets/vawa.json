@@ -1,0 +1,49 @@
+{
+  "id": "vawa",
+  "name": "VAWA Self-Petition (I-360)",
+  "summary": "Self-petition for an abused spouse or child of a U.S. citizen or permanent resident, or abused parent of a U.S. citizen son or daughter.",
+  "confidential": true,
+  "confidentialityNote": "Protected by 8 U.S.C. 1367. Restricted case: only assigned staff may open it. Never send notices to the abuser's address. Never put the abuser's name in reminders or messages.",
+  "forms": [
+    { "form": "I-360", "title": "Petition for Amerasian, Widow(er), or Special Immigrant (VAWA)", "edition": "01/20/25", "role": "main", "source": "i-360instr.txt" },
+    { "form": "I-485", "title": "Application to Adjust Status", "edition": "09/18/26", "role": "optional", "when": { "question": "concurrentI485", "equals": "Yes" }, "note": "Concurrent filing only if the self-petitioner is an immediate relative (abuser is a U.S. citizen) or a visa is available." },
+    { "form": "I-765", "title": "Application for Employment Authorization", "edition": "verify on uscis.gov/i-765", "role": "optional", "note": "I-360 asks whether to issue a (c)(31) EAD on approval; a separate I-765 is only needed in other cases." }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-360 (VAWA filings go to a dedicated address).", "fee": "See Form G-1055 at uscis.gov/g-1055." },
+  "blocks": ["applicant", "address", "entry", "family", "criminal"],
+  "questions": [
+    { "section": "Safety", "id": "safeToContactHome", "label": "Is it safe for us to call, text or mail you at the address and phone you gave?", "type": "yesno", "required": true },
+    { "section": "Your relationship to the abuser", "id": "abuserRelationship", "label": "The abuser is your", "type": "select", "options": ["Spouse (current)", "Former spouse", "Parent", "U.S. citizen son or daughter (21 or older)"], "required": true },
+    { "section": "Your relationship to the abuser", "id": "abuserStatus", "label": "Abuser's status", "type": "select", "options": ["U.S. citizen", "Lawful permanent resident", "Not sure"], "required": true },
+    { "section": "Your relationship to the abuser", "id": "abuserName", "label": "Abuser's full name", "type": "text", "required": true, "restricted": true },
+    { "section": "Your relationship to the abuser", "id": "abuserDob", "label": "Abuser's date of birth (if known)", "type": "date", "restricted": true },
+    { "section": "Your relationship to the abuser", "id": "livedTogether", "label": "Where and when did you live with the abuser?", "type": "textarea", "required": true },
+    { "section": "Your relationship to the abuser", "id": "relationshipEndDate", "label": "If the marriage ended, or the abuser died or lost status, the date it happened", "type": "date", "help": "You generally must file within 2 years of these events." },
+    { "section": "What happened", "id": "abuseNarrative", "label": "Describe the abuse or extreme cruelty (physical harm, threats, control, isolation, threats about immigration)", "type": "textarea", "required": true },
+    { "section": "What happened", "id": "goodFaith", "label": "How did you meet and why did you marry? (for spouses)", "type": "textarea", "when": { "question": "abuserRelationship", "in": ["Spouse (current)", "Former spouse"] }, "required": true },
+    { "section": "Filing plan", "id": "concurrentI485", "label": "File Form I-485 at the same time?", "type": "yesno", "required": true },
+    { "section": "Filing plan", "id": "wantsC31Ead", "label": "Do you want USCIS to issue a (c)(31) work permit if approved?", "type": "yesno", "required": true }
+  ],
+  "checklist": [
+    { "id": "abuser_status_proof", "label": "Proof of the abuser's U.S. citizenship or permanent residence (copy of passport, birth certificate, naturalization certificate, Green Card, or anything showing their A-Number)", "required": true, "help": "If you do not have it, tell us what you know. USCIS can sometimes check its own records.", "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 1" },
+    { "id": "relationship_proof", "label": "Marriage certificate, divorce decree, or birth certificates proving your relationship to the abuser", "required": true, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 2" },
+    { "id": "joint_residence", "label": "Proof you lived together (lease, utility bills, school or medical records, mail to the same address)", "required": true, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 3" },
+    { "id": "abuse_evidence", "label": "Evidence of the abuse (police reports, protective orders, medical records, shelter letters, photos, counselor letters, affidavits)", "required": true, "confidential": true, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 4" },
+    { "id": "personal_affidavit", "label": "Your personal declaration (staff will help you write it)", "required": true, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE items 4-6" },
+    { "id": "gmc_affidavit", "label": "Your affidavit of good moral character", "required": true, "when": { "question": "dob", "ageAtLeast": 14 }, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 5" },
+    { "id": "police_clearances", "label": "Police clearance or state background check from each place you lived 6 months or more in the last 3 years", "required": true, "when": { "question": "dob", "ageAtLeast": 14 }, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 5" },
+    { "id": "good_faith_marriage", "label": "Proof the marriage was real (joint insurance, lease, taxes, bank statements, photos, affidavits from people who know you)", "required": true, "when": { "question": "abuserRelationship", "in": ["Spouse (current)", "Former spouse"] }, "source": "I-360 Instructions 01/20/25, VAWA EVIDENCE item 6" }
+  ],
+  "coverLetter": {
+    "re": "Form I-360, VAWA Self-Petition - CONFIDENTIAL, protected under 8 U.S.C. 1367",
+    "request": "We respectfully submit the enclosed Form I-360 self-petition on behalf of {{givenName}} {{familyName}} under the Violence Against Women Act.",
+    "points": [
+      "The self-petitioner has a qualifying relationship with an abusive {{abuserStatus}}.",
+      "The self-petitioner resided with the abuser.",
+      "The self-petitioner was subjected to battery or extreme cruelty during the relationship.",
+      "The self-petitioner is a person of good moral character{{#goodFaith}} and entered the marriage in good faith{{/goodFaith}}."
+    ]
+  },
+  "rules": ["vawaTwoYear"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

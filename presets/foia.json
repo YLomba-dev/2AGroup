@@ -1,0 +1,35 @@
+{
+  "id": "foia",
+  "name": "FOIA Records Request",
+  "summary": "Request for the client's immigration file (A-file) and records. USCIS takes requests through its online FIRST system; Form G-639 is optional for paper requests. Other agencies (CBP, ICE, OBIM, EOIR, FBI, State) need separate requests.",
+  "confidential": false,
+  "instructionsLoaded": false,
+  "instructionsNote": "No FOIA instructions were in the reference set. Confirm the USCIS FIRST process and G-639 edition on uscis.gov/records before relying on this preset.",
+  "forms": [
+    { "form": "G-639", "title": "Freedom of Information/Privacy Act Request (optional paper form)", "edition": "verify on uscis.gov/g-639", "role": "optional", "note": "Online FIRST request is the usual route. The demo prints a request summary for staff to enter online." }
+  ],
+  "filing": { "where": "USCIS FIRST online system (first.uscis.gov) or by mail as shown on uscis.gov/records.", "fee": "USCIS charges no fee for most FOIA requests; verify on uscis.gov/records." },
+  "blocks": ["applicant", "address"],
+  "questions": [
+    { "section": "Records requested", "id": "agencies", "label": "Which agencies? (USCIS, CBP, ICE, OBIM, EOIR, FBI, State)", "type": "text", "required": true },
+    { "section": "Records requested", "id": "recordsSought", "label": "Records requested (for example: complete A-file, all applications and decisions, entry records)", "type": "textarea", "required": true },
+    { "section": "Records requested", "id": "dateRange", "label": "Date range of the records", "type": "text" },
+    { "section": "Records requested", "id": "receiptNumbers", "label": "Known receipt numbers", "type": "textarea" },
+    { "section": "Records requested", "id": "parentsNames", "label": "Parents' names (helps locate the file)", "type": "text" },
+    { "section": "Records requested", "id": "entryDates", "label": "Dates of entry to the U.S. you remember", "type": "textarea" }
+  ],
+  "checklist": [
+    { "id": "photo_id", "label": "Copy of photo ID", "required": true },
+    { "id": "identity_verification", "label": "Signed verification of identity or consent (staff prepare it; you sign)", "required": true, "help": "A notarized statement or a statement under penalty of perjury." }
+  ],
+  "coverLetter": {
+    "re": "Freedom of Information Act / Privacy Act request - records of {{givenName}} {{familyName}}",
+    "request": "Pursuant to the Freedom of Information Act, 5 U.S.C. 552, and the Privacy Act, 5 U.S.C. 552a, we request copies of the following records: {{recordsSought}}.",
+    "points": [
+      "Subject: {{givenName}} {{familyName}}, born {{dob}} in {{countryOfBirth}}{{#aNumber}}, A-Number {{aNumber}}{{/aNumber}}.",
+      "Signed verification of identity is enclosed."
+    ]
+  },
+  "rules": [],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

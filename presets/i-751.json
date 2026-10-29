@@ -1,0 +1,42 @@
+{
+  "id": "i-751",
+  "name": "I-751 Remove Conditions on Residence",
+  "summary": "Conditional resident (2-year Green Card through marriage) asks USCIS to remove the conditions, jointly with the spouse or alone with a waiver.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-751", "title": "Petition to Remove Conditions on Residence", "edition": "04/01/24", "role": "main", "source": "i-751instr.txt" }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-751.", "fee": "See Form G-1055 at uscis.gov/g-1055." },
+  "blocks": ["applicant", "address", "biographic", "family", "employment", "criminal"],
+  "questions": [
+    { "section": "Your conditional residence", "id": "cprExpiry", "label": "Expiration date on your 2-year Green Card", "type": "date", "required": true },
+    { "section": "Your conditional residence", "id": "filingBasis", "label": "How are you filing?", "type": "select", "options": ["Jointly with my spouse", "Waiver - spouse died", "Waiver - marriage ended in divorce or annulment", "Waiver - battered or subjected to extreme cruelty", "Waiver - extreme hardship"], "required": true },
+    { "section": "Your conditional residence", "id": "includeChildren", "label": "Are you including conditional resident children?", "type": "yesno", "required": true },
+    { "section": "Your conditional residence", "id": "militaryOrders", "label": "Do you live overseas on military or government orders?", "type": "yesno" }
+  ],
+  "checklist": [
+    { "id": "green_card_copy", "label": "Front and back of your conditional Green Card (and your included children's cards)", "required": true, "source": "I-751 Instructions 04/01/24, What Initial Evidence Is Required - Permanent Resident Card" },
+    { "id": "children_birth_certificates", "label": "Birth certificates of children born during the marriage", "required": false, "source": "I-751 Instructions, Evidence of the Relationship, item 1" },
+    { "id": "joint_residence", "label": "Lease or mortgage showing you live together or own your home together", "required": true, "source": "I-751 Instructions, Evidence of the Relationship, item 2" },
+    { "id": "joint_finances", "label": "Joint bank statements with transactions, joint tax returns, insurance naming each other, joint utility bills or loans", "required": true, "source": "I-751 Instructions, Evidence of the Relationship, item 3" },
+    { "id": "other_relationship", "label": "Other proof the marriage was real (photos over time, trips, messages)", "required": false, "source": "I-751 Instructions, Evidence of the Relationship, item 4" },
+    { "id": "affidavits_two", "label": "Affidavits from at least 2 people who have known you both since you got conditional residence", "required": false, "help": "Each must give the writer's full name and address, date and place of birth, relationship to you, and how they know about your marriage. Originals are submitted.", "source": "I-751 Instructions, Evidence of the Relationship, item 5" },
+    { "id": "death_certificate", "label": "Spouse's death certificate", "required": true, "when": { "question": "filingBasis", "equals": "Waiver - spouse died" }, "source": "I-751 Instructions, Evidence of the Relationship (filing as an individual due to death)" },
+    { "id": "divorce_decree", "label": "Final divorce decree or annulment", "required": true, "when": { "question": "filingBasis", "equals": "Waiver - marriage ended in divorce or annulment" }, "source": "I-751 Instructions, Evidence of the Relationship (marriage terminated)" },
+    { "id": "abuse_evidence", "label": "Evidence of abuse (police, court, medical, shelter, protective order, photos)", "required": true, "when": { "question": "filingBasis", "equals": "Waiver - battered or subjected to extreme cruelty" }, "confidential": true, "source": "I-751 Instructions, battered or subjected to extreme cruelty, items 1-2" },
+    { "id": "hardship_evidence", "label": "Evidence of extreme hardship that arose during the 2 conditional years", "required": true, "when": { "question": "filingBasis", "equals": "Waiver - extreme hardship" }, "source": "I-751 Instructions, extreme hardship waiver" },
+    { "id": "military_orders", "label": "Copy of current military or government orders, 2 photos and 2 FD-258 fingerprint cards per person", "required": true, "when": { "question": "militaryOrders", "equals": "Yes" }, "source": "I-751 Instructions, What Initial Evidence Is Required - Exception" },
+    { "id": "arrest_records", "label": "Official arrest and court disposition records for every arrest or charge", "required": true, "when": { "question": "everArrested", "equals": "Yes" }, "source": "I-751 Instructions, Criminal History" }
+  ],
+  "coverLetter": {
+    "re": "Form I-751, Petition to Remove Conditions on Residence",
+    "request": "We respectfully submit the enclosed Form I-751 on behalf of {{givenName}} {{familyName}}, filed on the basis: {{filingBasis}}.",
+    "points": [
+      "The petitioner obtained conditional residence through a marriage entered in good faith.",
+      "The enclosed evidence documents the relationship from the date of marriage to the present.",
+      "The petition is timely filed with respect to the conditional residence expiration date of {{cprExpiry}}."
+    ]
+  },
+  "rules": ["i751Window"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

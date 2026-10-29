@@ -1,0 +1,582 @@
+ Instructions for Petition for Alien Relative, and             USCIS
+Supplemental Information for Spouse Beneficiary         Form I-130/I-130A
+
+                 Department of Homeland Security         OMB No. 1615-0012
+             U.S. Citizenship and Immigration Services    Expires 02/28/2027
+
+ What Is the Purpose of Form I-130?
+
+A citizen or lawful permanent resident of the United States may file Form I-130, Petition for Alien Relative, with U.S.
+Citizenship and Immigration Services (USCIS) to establish the existence of a relationship to certain alien relatives who
+wish to immigrate to the United States.
+
+ Who May File Form I-130
+
+1. If you are a U.S. citizen, you must file a separate Form I-130 for each eligible relative. You may file Form I-130 for:
+    A. Your spouse;
+    B. Your unmarried children under 21 years of age;
+    C. Your unmarried sons or daughters 21 years of age or older;
+    D. Your married sons or daughters of any age;
+    E. Your brothers or sisters (you must be 21 years of age or older); and
+    F. Your mother or father (you must be 21 years of age or older).
+
+2. If you are a lawful permanent resident of the United States, you must file a separate Form I-130 for each eligible
+    relative. You may file Form I-130 for:
+
+    A. Your spouse;
+    B. Your unmarried child under 21 years of age; and
+    C. Your unmarried son or daughter 21 years of age or older.
+
+NOTE:
+1. If you are filing for your spouse, he or she must complete and sign Form I-130A, Supplemental Information for
+
+    Spouse Beneficiary. If your spouse is overseas, Form I-130A must still be completed, but your spouse does not have
+    to sign Form I-130A. Form I-130A must be submitted with Form I-130.
+
+2. There is no visa category for married children of lawful permanent residents. If you are a lawful permanent resident
+    and you filed Form I-130 for your unmarried son or daughter, but your son or daughter marries before immigrating to
+    the United States or adjusting status to lawful permanent resident, we will deny or automatically revoke your petition.
+
+3. Non-citizen U.S. nationals (as defined in the Immigration and Nationality Act (INA) section 308) have the same rights
+    as lawful permanent residents to petition for family members. If you are a U.S. national born in American Samoa or
+    Swains Island (or who otherwise qualifies as a non-citizen U.S. national, as described in INA section 308), you should
+    indicate in Part 2., Item Number 36. of the petition that you are a lawful permanent resident. You do not need to list
+    an Alien Registration Number (A-Number) in Part 2., Item Number 1. of the petition.
+
+4. If the beneficiary qualifies under Items 1.C., 1.D., or 1.E. above, you are not required to file separate petitions for the
+    beneficiary's spouse or unmarried children under 21 years of age. They are considered derivative beneficiaries and
+    you should list them in Part 4. of this petition.
+
+Form I-130 Instructions 04/01/24                        Page 1 of 11
+5. If you are the lawful permanent resident petitioner and the beneficiary qualifies under Items 2.A., 2.B., or 2.C. above,
+    you are not required to file separate petitions for the beneficiary's unmarried children under 21 years of age. They are
+    considered derivative beneficiaries and you should list them in Part 4. of this petition.
+
+6. The derivative beneficiaries described in Items 4. and 5. above may apply for an immigrant visa along with the
+    beneficiary.
+
+ Who May Not File Form I-130?
+
+You may NOT file Form I-130 for a person in the following categories:
+
+1. An adoptive parent or adopted child, if the adoption took place after the child turned 16 years of age, or if the child
+    has not been in the legal custody and has not lived with the parents for at least 2 years before filing the petition;
+
+2. A natural parent, if you gained lawful permanent resident status or U.S. citizenship through adoption or as a special
+    immigrant juvenile;
+
+3. A stepparent or stepchild, if the marriage that created the relationship took place after the child turned 18 years of age;
+
+4. A spouse, if you and your spouse were not both physically present at the marriage ceremony, unless the marriage was
+    consummated;
+
+5. A spouse, if you gained lawful permanent resident status through a prior marriage to a U.S. citizen or lawful
+    permanent resident, unless:
+    A. You are now a naturalized U.S. citizen;
+    B. You have been a lawful permanent resident for at least five years;
+    C. You can establish by clear and convincing evidence that you did not enter the prior marriage (through which you
+         gained your lawful permanent resident status) in order to evade any U.S. immigration law; or
+    D. Your prior marriage through which you gained your immigrant status was terminated by the death of your former
+         spouse;
+
+6. A spouse, if you married your spouse while he or she was the subject of an exclusion, deportation, removal, or
+    rescission proceeding regarding his or her right to be admitted into or to remain in the United States, or while a
+    decision in any of these proceedings was before any court on judicial review. However, you may be eligible for the
+    bona fide marriage exemption under INA section 245(e)(3) if:
+    A. You request in writing a bona fide marriage exemption and prove by clear and convincing evidence that the
+         marriage is legally valid where it took place and that you and your spouse married in good faith and not for the
+         purpose of obtaining lawful permanent resident status for your spouse and that no fee or any other consideration
+         (other than appropriate attorney fees) was given to you for your filing of this petition. The request must be
+         submitted with Form I-130; or
+    B. Your spouse has lived outside the United States, after the marriage, for a period of at least two years;
+
+7. Any person, if USCIS determines that he or she entered into or attempted or conspired to enter into a marriage in
+    order to evade U.S. immigration laws; and
+
+8. A grandparent, grandchild, nephew, niece, uncle, aunt, cousin, or parent-in-law.
+
+Form I-130 Instructions 04/01/24   Page 2 of 11
+ General Instructions
+
+We provide free forms through the USCIS website. To view, print, or complete our forms, you should use the latest
+version of Adobe Reader, which you can download for free at http://get.adobe.com/reader/. If you do not have internet
+access, you may call the USCIS Contact Center and ask that we mail a form to you.
+
+Signature. You (or your signing authority) must properly complete your petition. USCIS will not accept a stamped or
+typewritten name in place of any signature on this petition. If you are under 14 years of age, your parent or legal guardian
+may sign the petition on your behalf. A legal guardian may also sign for a mentally incompetent person. If your petition
+is not signed, or if the signature is not valid, we will reject your petition. See 8 CFR 103.2(a)(7)(ii)(A). If USCIS accepts
+a request for adjudication and determines that it has a deficient signature, USCIS may reject or deny the request.
+
+Validity of Signatures. USCIS will consider a photocopied, faxed, or scanned copy of an original benefit request with a
+handwritten signature as valid for filing purposes. The photocopy, fax, or scan must be of the original request or document
+containing the handwritten ink signature.
+
+Filing Fee. See Form G-1055, available at www.uscis.gov/forms, for specific information about the fees applicable to
+this form.
+
+Evidence. When you file your petition, you must submit all evidence and supporting documents listed in the General
+Requirements section of these Instructions.
+
+Biometric Services Appointment. USCIS may require you to appear for an interview or provide biometrics (fingerprints,
+photograph, and/or signature) at any time to verify your identity, obtain additional information, and conduct background
+and security checks, including a check of criminal history records maintained by the Federal Bureau of Investigation
+(FBI), before making a decision on your application or petition. If we determine that a biometric services appointment
+is necessary, we will send you an appointment notice with the date, time, and location of your appointment. If you are
+currently overseas, your notice will instruct you to contact a U.S. Embassy, U.S. Consulate, or USCIS office outside the
+United States to schedule an appointment.
+
+At your biometrics appointment, you must sign an oath reaffirming that:
+
+1. You provided or authorized all information in the petition;
+
+2. You reviewed and understood all of the information contained in, and submitted with, your petition; and
+
+3. All of this information was complete, true, and correct at the time of filing.
+
+If you do not attend your biometric services appointment, we may deny your petition.
+
+Copies. You should submit legible photocopies of requested documents unless the Instructions specifically instruct you to
+submit an original document. USCIS may request an original document at any time during our process. If we request an
+original document from you, we will return it to you after USCIS determines it no longer needs the original.
+
+NOTE: If you submit original documents when they are not required or requested, USCIS may destroy them after we
+receive them.
+
+Translations. If you submit a document with information in a foreign language, you must also submit a full English
+translation. The translator must sign a certification that the English language translation is complete and accurate, and
+that he or she is competent to translate from the foreign language into English. The certification must also include their
+signature, printed name, the signature date, and their contact information.
+
+USCIS Contact Center. For additional information on the petition and Instructions about where to file, change of
+address, and other questions, visit the USCIS Contact Center at www.uscis.gov/contactcenter or call at 800-375-5283
+(TTY 800-767-1833). The USCIS Contact Center provides information in English and Spanish.
+
+Form I-130 Instructions 04/01/24   Page 3 of 11
+Disability Accommodations/Modifications. To request a disability accommodation/modification, follow the instructions
+on your appointment notice or at www.uscis.gov/accommodationsinfo.
+
+How To Complete Form I-130
+
+1. Type or print legibly in black ink.
+
+2. If you need extra space to complete any item within this petition, use the space provided in Part 9. Additional
+    Information or attach a separate sheet of paper. Type or print your name and Alien Registration Number (A-Number)
+    (if any) at the top of each sheet; indicate the Page Number, Part Number, and Item Number to which your answer
+    refers; and sign and date each sheet.
+
+3. Answer all questions fully and accurately. If a question does not apply to you (for example, if you have never been
+    married and the question asks, "Provide the name of your current spouse"), type or print "N/A" unless otherwise
+    directed. If your answer to a question which requires a numeric response is zero or none (for example, "How many
+    children do you have" or "How many times have you departed the United States"), type or print "None" unless
+    otherwise directed.
+
+4. Enter dates in mm/dd/yyyy format. If you cannot provide an exact date, provide an approximate date in the same
+    format and include an explanation in Part 9. Additional Information.
+
+5. USCIS Online Account Number. You will only have a USCIS Online Account Number (OAN) if you previously
+    filed a form that has a receipt number that begins with IOE. If you filed the form online, you can find your OAN in
+    your account profile. If you mailed us the form, you can find your OAN at the top of the Account Access Notice we
+    sent you. If you do not have a receipt number that begins with IOE, you do not have an OAN. If you were issued a
+    USCIS Online Account Number, enter it in the space provided at Part 2., Item Number 2. The OAN is not the same
+    as an A-Number.
+
+6. Part 3. Biographic Information. Provide the biographic information requested in Part 3., Item Numbers 1. - 6.
+    Providing this information as part of your petition may reduce the time you spend at your USCIS ASC appointment as
+    described in the Biometric Services Appointment section of these Instructions.
+
+    A. Ethnicity and Race. Select the boxes that best describe your ethnicity and race.
+
+         Categories and Definitions for Ethnicity and Race
+
+         (1) Hispanic or Latino. A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish
+               culture or origin, regardless of race. (NOTE: This category is only included under Ethnicity in Part 3., Item
+               Number 1.)
+
+         (2) American Indian or Alaska Native. A person having origins in any of the original peoples of North and
+               South America (including Central America), and who maintains tribal affiliation or community attachment.
+
+         (3) Asian. A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian
+               subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine
+               Islands, Thailand, and Vietnam.
+
+         (4) Black or African American. A person having origins in any of the black racial groups of Africa.
+
+         (5) Native Hawaiian or Other Pacific Islander. A person having origins in any of the original peoples of
+               Hawaii, Guam, Samoa, or other Pacific Islands.
+
+         (6) White. A person having origins in any of the original peoples of Europe, the Middle East, or North Africa.
+
+    B. Height. Select the values that best match your height in feet and inches. For example, if you are five feet and
+         nine inches, select "5" for feet and "09" for inches. Do not enter your height in meters or centimeters.
+
+    C. Weight. Enter your weight in pounds. If you do not know your weight, or need to enter a weight under 30
+         pounds or over 699 pounds, enter "000." Do not enter your weight in kilograms.
+
+Form I-130 Instructions 04/01/24   Page 4 of 11
+    D. Eye Color. Select the box that best describes the color of your eyes.
+
+    E. Hair Color. Select the box that best describes the color of your hair.
+
+7. Form I-94 Arrival/Departure Record. Complete Part 4., Item Numbers 46.b. - 50., of the petition regarding the
+    admission or travel document for the beneficiary.
+
+    If U.S. Customs and Border Protection (CBP) or USCIS issued the beneficiary a Form I-94, Arrival/Departure Record,
+    provide the beneficiary's Form I-94 number and date that his or her authorized period of stay expires or expired (as
+    shown on Form I-94). The Form I-94 number also is known as the Departure Number on some versions of Form I-94.
+
+    NOTE: You may visit the CBP website at www.cbp.gov/i94 to obtain a paper version of an electronic Form I-94
+    if needed. If you cannot obtain the Form I-94 from the CBP website, it may be obtained by filing Form I-102,
+    Application for Replacement/Initial Nonimmigrant Arrival-Departure Record, with USCIS. See Form G-1055,
+    available at www.uscis.gov/forms, for specific information about the fees applicable to Form I-102.
+
+    Passport and Travel Document Numbers. Complete Part 4., Item Numbers 45. - 50., as applicable, if the
+    beneficiary relative used a passport or travel document to travel to the United States, enter the passport or travel
+    document information in the appropriate space on the petition, even if the passport or travel document is currently
+    expired.
+
+8. Part 6. Petitioner's Statement, Contact Information, Declaration, and Signature. Select the appropriate box to
+    indicate whether you read this petition yourself or whether you had an interpreter assist you. If someone assisted you
+    in completing the petition, select the box indicating that you used a preparer. Further, you must sign and date your
+    petition and provide your daytime telephone number, mobile telephone number (if any), and email address (if any).
+    Every petition MUST contain the signature of the petitioner (or parent or legal guardian, if applicable). A stamped or
+    typewritten name in place of a signature is not acceptable.
+
+9. Part 7. Interpreter's Contact Information, Certification, and Signature. If you used anyone as an interpreter to
+    read the Instructions and questions on this petition to you in a language in which you are fluent, the interpreter must
+    fill out this section, provide his or her name, the name and address of his or her business or organization (if any), his
+    or her daytime telephone number, his or her mobile telephone number (if any), and his or her email address (if any).
+    The interpreter must sign and date the petition.
+
+10. Part 8. Contact Information, Declaration, and Signature of the Person Preparing this Petition, if Other Than
+    the Petitioner. This section must contain the signature of the person who completed your petition, if other than
+    you, the petitioner. If the same individual acted as your interpreter and your preparer, that person should complete
+    both Part 7. and Part 8. If the person who completed this petition is associated with a business or organization,
+    that person should complete the business or organization name and address information. Anyone who helped you
+    complete this petition MUST sign and date the petition. A stamped or typewritten name in place of a signature is
+    not acceptable. If the person who helped you prepare your petition is an attorney or accredited representative whose
+    representation extends beyond preparation of this petition, he or she may be obliged to also submit a completed Form
+    G-28, Notice of Entry of Appearance as Attorney or Accredited Representative, along with your petition.
+
+   We recommend that you review your copy of your completed petition before you go to your biometric services
+    appointment at a USCIS ASC. At your appointment, USCIS will allow you to complete the petition process only
+    if you are able to confirm, under penalty of perjury, that all of the information in your petition is complete, true, and
+   correct. If you are not able to make that attestation in good faith at that time, we will require you to return for another
+
+                                                                  appointment.
+
+Form I-130 Instructions 04/01/24   Page 5 of 11
+ General Requirements
+
+1. Does approval of this petition mean that my family member is automatically a lawful permanent resident or
+    they can immediately immigrate to the United States?
+
+    No. An approved petition does not give the beneficiary automatic lawful permanent resident status or permission to
+    immediately immigrate to the United States.
+
+2. When will a visa become available?
+
+    When a petition is approved for the spouse, unmarried children under 21 years of age, or parents of a U.S. citizen,
+    these persons are classified as immediate relatives, which means visas are immediately available to them.
+
+    When a petition is approved for a U.S. citizen's sibling or married or adult son or daughter, or for a lawful permanent
+    resident's spouse, child, or unmarried son or daughter, it is assigned to the appropriate visa preference category. Each
+    year, a limited number of immigrant visas are available for each preference category. The visas are processed in the
+    order in which the petitions are properly filed and accepted by us. To be considered properly filed, a petition must be
+    fully completed and signed, and the filing fee must be paid.
+
+    For a monthly report on the dates when immigrant visas are available, call the U.S. Department of State at
+    1-202-663-1541, or visit their website at www.travel.state.gov.
+
+3. What documents do you need to show that you are a U.S. citizen?
+
+    A. A copy of your birth certificate, issued by a civil registrar, vital statistics office, or other civil authority showing
+         that you were born in the United States;
+
+    B. A copy of your naturalization certificate or certificate of citizenship issued by USCIS or the former Immigration
+         and Naturalization Service (INS);
+
+    C. A copy of Form FS-240, Consular Report of Birth Abroad (CRBA), issued by a U.S. Embassy or U.S. Consulate;
+
+    D. A copy of your unexpired U.S. passport; or
+
+    E. An original statement from a U.S. consular officer verifying that you are a U.S. citizen with a valid passport.
+
+    If you do not have any of the above documents and you were born in the United States, see the What if an official
+    document is not available section of these Instructions.
+
+4. What documents do you need to show that you are a lawful permanent resident?
+
+    If you are a lawful permanent resident, you must file your petition with a copy of the front and back of your
+    Permanent Resident Card (Form I-551). If you have not yet received your card, submit copies of your passport
+    biographic page and the page showing admission as a lawful permanent resident, or other evidence of permanent
+    resident status issued by USCIS or the former INS.
+
+5. What documents do you need to prove family relationship?
+
+    You have to prove that there is a family relationship between you and the beneficiary. If you are filing for a relative
+    listed below, submit the following documentation to prove the family relationship.
+
+    A. A spouse:
+
+         (1) A copy of your marriage certificate;
+
+         (2) If either you were or your spouse was previously married, submit copies of documents showing that each of
+               the prior marriages was legally terminated; and
+
+         (3) You must submit two identical color passport-style photographs of yourself and your spouse (if he or she is
+               in the United States) taken within 30 days of filing this petition. The photos must have a white to off-white
+               background, be printed on thin paper with a glossy finish, and be unmounted and unretouched.
+
+Form I-130 Instructions 04/01/24   Page 6 of 11
+          The two identical color passport-style photos must be 2 by 2 inches. The photos must be in color with full
+          face, frontal view on a white to off-white background. Head height should measure 1 to 1 3/8 inches from top
+          of hair to bottom of chin, and eye height is between 1 1/8 to 1 3/8 inches from bottom of photo. Your head
+          must be bare unless you are wearing headwear as required by a religious denomination of which you are a
+          member. Using a pencil or felt pen, lightly print your name and A-Number (if any) on the back of the photo.
+
+    NOTE: In addition to the required documentation listed above, you should submit one or more of the
+    following types of documentation that may prove you have a bona fide marriage:
+
+    (1) Documentation showing joint ownership of property;
+
+    (2) A lease showing joint tenancy of a common residence, meaning you both live at the same address together;
+
+    (3) Documentation showing that you and your spouse have combined your financial resources;
+
+    (4) Birth certificates of children born to you and your spouse together;
+
+    (5) Affidavits sworn to or affirmed by third parties having personal knowledge of the bona fides of the marital
+          relationship. Each affidavit must contain the full name and address of the person making the affidavit; date
+          and place of birth of the person making the affidavit; and complete information and details explaining how the
+          person acquired his or her knowledge of your marriage; or
+
+    (6) Any other relevant documentation to establish that there is an ongoing marital union.
+
+          NOTE: You must submit clear and convincing evidence that you and your spouse entered into the
+          marriage in good faith and not for immigration purposes if you married your spouse while your spouse
+          was the subject of an exclusion, deportation, removal, or rescission proceeding (including during the
+          judicial review of any one of these proceedings); or you are a lawful permanent resident that obtained
+          your permanent residence through a prior marriage that was not determined by the death of your
+          spouse and you are filing your petition for your spouse that you were married within five years of
+          obtaining your permanent residence.
+
+B. A child and you are the mother: Submit a copy of the child's birth certificate showing your name and the name
+    of your child.
+
+C. A child and you are the father: Submit a copy of the child's birth certificate showing both parents' names, your
+    marriage certificate to the child's mother, and proof of legal termination of the parents' prior marriages, if any,
+    issued by civil authorities.
+
+D. A child born out of wedlock and you are the father: Submit evidence that you and the mother were married
+    while the child was under 18 years of age, or submit evidence that the child was legitimated under the law of the
+    child's residence or domicile, or under the law of your residence or domicile, before the child reached 18 years of
+    age. If your child was not legitimated before reaching 18 years of age, you must file your petition with copies of
+    evidence that a bona fide parent-child relationship existed between you and the child before the child reached 21
+    years of age. This may include evidence that you lived with the child, supported him or her, or otherwise showed
+    continuing parental interest in the child's welfare.
+
+E. A brother or sister: Submit a copy of your birth certificate and a copy of your brother's or sister's birth
+    certificate showing that you have at least one common parent. If you and your brother or sister have a common
+    father but different mothers, submit copies of the marriage certificates showing that your father was married to
+    each mother, as well as copies of documents showing that any prior marriages of either your father or mothers
+    were legally terminated. If you and your brother or sister are related through adoption or a stepparent, or if you
+    have a common father and either of you were not legitimated before you turned 18 years of age, see Items D., H.,
+    and I. in these Instructions for additional information on proving your family relationship.
+
+F. A mother: Submit a copy of your birth certificate showing your name and your mother's name.
+
+Form I-130 Instructions 04/01/24   Page 7 of 11
+    G. A father: Submit a copy of your birth certificate showing the names of both parents. Also submit a copy of your
+         parents' marriage certificate establishing that your father was married to your mother. If either your mother or
+         father were previously married, submit copies of documents showing that each of the prior marriages was legally
+         terminated. If you are filing for a stepparent or adoptive parent, or if you are filing for your father and you were
+         born out of wedlock, see Items D., H., and I. in these Instructions for additional information on proving your
+         family relationship.
+
+    H. Stepparent/Stepchild: If your petition is based on a stepparent-stepchild relationship, you must file your petition
+         with a copy of the marriage certificate of the stepparent to the child's natural parent showing that the marriage
+         occurred before the child turned 18 years of age, copies of documents showing that any prior marriages were
+         legally terminated (if applicable), and a copy of the stepchild's birth certificate.
+
+    I. Adoptive parent or adopted child: If you and the person you are filing for are related by adoption, you must
+         submit a copy of the adoption decree showing that the adoption took place before the child turned 16 years of age.
+
+         If you adopted a child under 16 years of age, and you also adopted the older sibling of that child, you may file a
+         petition for the older child if the adoption occurred before the older child turned 18 years of age. You must submit
+         a copy of the adoption decree showing that the adoption of the sibling occurred before the sibling turned 18 years
+         of age.
+
+         In either case, you must also submit copies of evidence that each child was in the legal custody of and resided
+         with the parents who adopted him or her for at least two years before or after adoption. Only a court or
+         recognized government entity may grant legal custody, and it is usually granted at the time the adoption is
+         finalized. However, if legal custody is granted by a court or recognized government entity prior to the adoption,
+         that time may count toward fulfilling the 2-year legal custody requirement.
+
+6. Notice to persons filing for spouses, if you have been married less than two years.
+
+    If you have been married less than two years on the date your spouse has obtained permanent resident status, USCIS
+    will grant your spouse conditional permanent resident status for two years under INA section 216. USCIS then
+    requires both you and your spouse to file Form I-751, Petition to Remove Conditions on Residence, during the 90-day
+    period immediately before your spouse's conditional permanent resident status expires.
+
+    Conditional permanent residents have the same rights, privileges, responsibilities, and duties as all other lawful
+    permanent residents. A conditional permanent resident is not limited in his or her right to apply for naturalization, file
+    petitions on behalf of qualifying relatives, or reside permanently in the United States as an immigrant in accordance
+    with U.S. immigration laws.
+
+    NOTE: If your spouse fails to timely file Form I-751 to remove the conditional basis of his or her spouse's
+    permanent resident status, USCIS will terminate his or her permanent resident status and begin removal proceedings.
+
+7. What if a name has changed?
+
+    If either you or the person you are filing for is using a name that is not the same name shown on the relevant
+    documents, you must file your petition with copies of the legal documents reflecting the name change, such as a
+    marriage certificate, adoption decree, or court order.
+
+8. What if an official document is not available?
+
+    In this situation, submit a statement from the appropriate civil authority certifying that the document or documents
+    are not available. You must also submit secondary evidence, which may include one or more of the following records
+    listed below.
+
+    A. Religious record: A copy of a document bearing the seal of the religious organization showing that the baptism,
+         dedication, or comparable rite occurred within two months after birth, and showing the date and place of the
+         child's birth, date of the religious ceremony, and the names of the child's parents.
+
+    B. School record: A letter from the authority (preferably the first school attended) showing the date of admission to
+         the school, the child's date of birth or age at that time, place of birth, and names of the parents.
+
+Form I-130 Instructions 04/01/24   Page 8 of 11
+    C. Census record: State or Federal census records showing the names, place of birth, date of birth, or the age of the
+         person listed.
+
+    D. If records like those described above are not available, then you may submit two or more written statements from
+         individuals who were living at the time and who have personal knowledge of the event you are trying to prove,
+         such as the date and place of birth, marriage, or death. The individuals making the written statements do not
+         have to be U.S. citizens. Each written statement must contain the following information regarding the individual
+         making the written statement: his or her full name, address, date and place of birth, full information concerning
+         the event, and complete details explaining how the individual acquired personal knowledge of the event.
+         Finally, each individual's written statement must include the following declaration, "I declare (or certify, verify,
+         or state) under penalty of perjury under the laws of the United States of America that the foregoing is true and
+         correct. Executed on [date], [signature]."
+
+    E. For parent-child relationships only: If other forms of evidence have proven inconclusive, the petitioner
+         may submit on a voluntary basis other evidence of a birth parent and birth child relationship to include
+         deoxyribonucleic acid (DNA) testing. DNA test results will only be accepted by USCIS from parentage-testing
+         laboratories accredited by the American Association of Blood Banks (AABB). A list of laboratories can be
+         viewed at www.aabb.org/sa/facilities/Pages/RTestAccrFac.aspx.
+
+ Where To File?
+
+Please see our website at www.uscis.gov/i-130 for the most current information about where to file this petition.
+
+ Address Change
+
+A petitioner who is not a U.S. citizen must notify USCIS of his or her new address within 10 days of moving from his or
+her previous residence. For information on changing your address, go to our website at www.uscis.gov/addresschange,
+or call the USCIS Contact Center.
+
+NOTE: Do not submit a change of address request to the USCIS Lockbox.
+
+ Processing Information
+
+Initial Processing. Once USCIS accepts your petition we will check it for completeness. If you do not properly complete
+this petition, you will not establish a basis for your eligibility and we may reject or deny your petition.
+
+Requests for More Information. USCIS may request that you provide more information or evidence to support your
+petition. We may also request that you provide the originals of any copies you submit. If we request an original document
+from you, we will return it to you after USCIS determines it is no longer needed.
+
+Requests for Interview. We may request that you appear at a USCIS office for an interview based on your petition.
+During your interview, USCIS may require you to provide your biometrics to verify your identity and/or update
+background and security checks.
+
+Decision. The decision on Form I-130 involves a determination of whether you have established eligibility for the
+immigration benefit you are seeking. USCIS will notify you of our decision in writing.
+
+Form I-130 Instructions 04/01/24   Page 9 of 11
+ USCIS Forms and Information
+
+To ensure you are using the latest version of this petition, visit www.uscis.gov.
+
+ Penalties
+
+If you knowingly and willfully falsify or conceal a material fact or submit a false document with your Form I-130, we will
+deny your Form I-130 and may deny any other immigration benefit. In addition, you will face severe penalties provided
+by law and may be subject to criminal prosecution.
+
+ USCIS Compliance Review and Monitoring
+
+By signing this petition, you have stated under penalty of perjury (28 U.S.C. section 1746) that all information and
+documentation submitted with this petition are complete, true, and correct. You also authorize the release of any
+information from your records that USCIS may need to determine your eligibility for the immigration benefit you are
+seeking and consent to USCIS verifying such information.
+The Department of Homeland Security (DHS) has the authority to verify any information you submit to establish
+eligibility for the immigration benefit you are seeking at any time. USCIS' legal authority to verify this information is in
+8 U.S.C. sections 1103, 1155, and 1184, and 8 CFR Parts 103, 204, 205, and 214. To ensure compliance with applicable
+laws and authorities, USCIS may verify information before or after your case is decided.
+Agency verification methods may include, but are not limited to: review of public records and information; contact via
+written correspondence, the Internet, facsimile, other electronic transmission, or telephone; unannounced physical site
+inspections of residences and locations of employment; and interviews. USCIS will use information obtained through
+verification to assess your compliance with the laws and to determine your eligibility for an immigration benefit.
+Subject to the restrictions under 8 CFR 103.2(b)(16), USCIS will provide you with an opportunity to address any adverse
+or derogatory information that may result from a USCIS compliance review, verification, or site visit after a formal
+decision is made on your case or after the agency has initiated an adverse action which may result in revocation or
+termination of an approval.
+
+ DHS Privacy Notice
+
+AUTHORITIES: The information requested on this petition, and the associated evidence, is collected under the
+Immigration and Nationality Act (INA) section 204.
+
+PURPOSE: The primary purpose for providing the requested information on this petition is to determine if you have
+established eligibility for the immigration benefit for which you are filing. DHS will use the information you provide to
+grant or deny the immigration benefit you are seeking.
+
+DISCLOSURE: The information you provide is voluntary. However failure to provide the requested information,
+including your Social Security number, and the requested evidence, may delay a final decision in your case or result in
+denial of your petition.
+
+Form I-130 Instructions 04/01/24   Page 10 of 11
+ROUTINE USES: DHS may share the information you provide on this form with other Federal, state, local, and foreign
+government agencies and authorized organizations. DHS follows approved routine uses described in the associated
+published system of records forms [DHS/USCIS-001 - Alien File, Index, and National File Tracking System and
+DHS/USCIS-007 - Benefits Information System] and the published privacy impact assessments [DHS/USCIS/PIA-
+003 Integrated Digitization Document Management Program (IDDMP), DHS/USCIS/PIA-016(a) Computer Linked
+Application Information Management System and Associated Systems, and DHS/USCIS/PIA-051 Case and Activity
+Management for International Operations], which you can find at www.dhs.gov/privacy. DHS may also share the
+information, as appropriate, for law enforcement purposes or in the interest of national security.
+
+ Paperwork Reduction Act
+
+USCIS may not conduct or sponsor an information collection, and you are not required to respond to a collection of
+information unless it displays a currently valid Office of Management and Budget (OMB) control number. The public
+reporting burden for Form I-130 is estimated at 1.817 hours per response and Form I-130A is estimated at 50 minutes
+per response, including the time for reviewing instructions, gathering the required documentation and information,
+completing the forms, preparing statements, attaching necessary documentation, and submitting the forms. The collection
+of biometrics is estimated to require 1 hour and 10 minutes. Send comments regarding this burden estimate or any
+other aspect of this collection of information, including suggestions for reducing this burden to: U.S. Citizenship and
+Immigration Services, Regulatory Coordination Division, Office of Policy and Strategy, 5900 Capital Gateway Drive,
+Mail Stop #2140, Camp Springs, MD 20588-0009; OMB No. 1615-0012. Do not mail your completed Form I-130 or
+Form I-130A to this address.
+
+ Checklist
+
+For all Form I-130 petitioners:
+
+ Did you answer each question on Form I-130?
+ Did you sign and date the petition?
+ Did you enclose the correct filing fee for each petition?
+ Did you submit proof of your U.S. citizenship or lawful permanent resident status?
+ Did you submit other required supporting evidence?
+ If you have an attorney or accredited representative, did you include a completed Form G-28?
+
+For Form I-130 spouse petitioners:
+
+ Did you include two photographs of your spouse beneficiary?
+ Did you include a completed and signed Form I-130A?
+ Did you include two photographs of you (spouse petitioner)?
+
+Form I-130 Instructions 04/01/24   Page 11 of 11
+

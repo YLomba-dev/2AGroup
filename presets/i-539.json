@@ -1,0 +1,37 @@
+{
+  "id": "i-539",
+  "name": "I-539 Extend or Change Nonimmigrant Status",
+  "summary": "Extension of stay or change of nonimmigrant status (for example B-2 extension, change to F-1), with I-539A for each co-applicant family member.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-539", "title": "Application to Extend/Change Nonimmigrant Status", "edition": "08/28/24", "role": "main", "source": "i-539instr.txt" },
+    { "form": "I-539A", "title": "Supplemental Information for Application to Extend/Change Nonimmigrant Status", "edition": "08/28/24", "role": "conditional", "when": { "question": "coApplicants", "equals": "Yes" }, "note": "One for each additional person included (I-539 Instructions)." }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-539. Many categories can file online.", "fee": "See Form G-1055 at uscis.gov/g-1055." },
+  "blocks": ["applicant", "address", "entry", "family"],
+  "questions": [
+    { "section": "Your request", "id": "requestType", "label": "Extension of stay or change of status?", "type": "select", "options": ["Extension of stay", "Change of status", "Reinstatement (F-1 / M-1)"], "required": true },
+    { "section": "Your request", "id": "requestedStatus", "label": "Status requested (for example B-2, F-1, H-4)", "type": "text", "required": true },
+    { "section": "Your request", "id": "requestedUntil", "label": "Date you want to stay until", "type": "date", "required": true },
+    { "section": "Your request", "id": "reason", "label": "Why do you need the extension or change?", "type": "textarea", "required": true },
+    { "section": "Your request", "id": "coApplicants", "label": "Are family members included on this application?", "type": "yesno", "required": true },
+    { "section": "Your request", "id": "supportMeans", "label": "How will you support yourself during the stay?", "type": "textarea", "required": true }
+  ],
+  "checklist": [
+    { "id": "i94_each", "label": "Front and back of Form I-94 for each person included", "required": true, "source": "I-539 Instructions 08/28/24, category sections" },
+    { "id": "passport", "label": "Valid passport biographic page for each person", "required": true },
+    { "id": "relationship", "label": "Marriage and birth certificates for included family members", "required": true, "when": { "question": "coApplicants", "equals": "Yes" }, "source": "I-539 Instructions 08/28/24, Evidence of Relationship" },
+    { "id": "financial_support", "label": "Bank statements or support letter showing you can pay for your stay", "required": true },
+    { "id": "reason_evidence", "label": "Evidence supporting the reason (medical letter, I-20, return ticket, etc.)", "required": true }
+  ],
+  "coverLetter": {
+    "re": "Form I-539, Application to Extend/Change Nonimmigrant Status - {{requestType}} to {{requestedStatus}}",
+    "request": "We respectfully submit the enclosed Form I-539 on behalf of {{givenName}} {{familyName}}, requesting {{requestType}} in {{requestedStatus}} status until {{requestedUntil}}.",
+    "points": [
+      "The application is filed before the current authorized stay expires ({{statusExpires}}), or the delay was due to extraordinary circumstances.",
+      "The applicant has maintained status and has the means to support the requested stay."
+    ]
+  },
+  "rules": ["i539Timely"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

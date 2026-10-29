@@ -1,0 +1,170 @@
+{
+  "id": "Dy4Rk9DailyJob01",
+  "name": "2A - Daily reminders and deadlines",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      },
+      "id": "d3f7a0c2-0011-4c00-9000-000000000011",
+      "name": "Every day 7am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "__API_BASE__/api/automation/daily",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d3f7a0c2-0012-4c00-9000-000000000012",
+      "name": "Refresh cases and list reminders",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// One friendly reminder per client who has had missing items for a week.\nconst r = $input.first().json.reminders || [];\nreturn r.map((x) => {\n  const lines = x.missingDocuments.map((d) => '- ' + d);\n  if (x.missingAnswers) lines.push('- ' + x.missingAnswers + ' question(s) in \"My information\"');\n  return { json: { caseId: x.caseId, body: { kind: 'reminder', text: 'Hello ' + x.firstName + ', a friendly reminder from 2A Group Corp. To prepare your filing we still need:\\n' + lines.join('\\n') + '\\nYou can upload documents and answer questions in your portal. Write to us if you have trouble getting anything.' } } };\n});"
+      },
+      "id": "d3f7a0c2-0013-4c00-9000-000000000013",
+      "name": "Write reminders",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=__API_BASE__/api/automation/cases/{{ $json.caseId }}/message",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "d3f7a0c2-0014-4c00-9000-000000000014",
+      "name": "Send reminder in portal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Staff digest of deadlines in the next 30 days.\nconst d = $input.first().json;\nconst lines = (d.deadlines || []).map((x) => x.due + '  ' + x.client + ' (' + x.caseNumber + '): ' + x.title);\nreturn [{ json: { subject: '2A daily digest: ' + lines.length + ' deadline(s) in 30 days, ' + d.reminders.length + ' reminder(s) sent', text: lines.join('\\n') || 'No deadlines in the next 30 days.' } }];"
+      },
+      "id": "d3f7a0c2-0015-4c00-9000-000000000015",
+      "name": "Write staff digest",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        420
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d3f7a0c2-0016-4c00-9000-000000000016",
+      "name": "Send digest (connect email or Slack here)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        420
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 7am": {
+      "main": [
+        [
+          {
+            "node": "Refresh cases and list reminders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Refresh cases and list reminders": {
+      "main": [
+        [
+          {
+            "node": "Write reminders",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Write staff digest",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write reminders": {
+      "main": [
+        [
+          {
+            "node": "Send reminder in portal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write staff digest": {
+      "main": [
+        [
+          {
+            "node": "Send digest (connect email or Slack here)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}

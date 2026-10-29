@@ -1,0 +1,57 @@
+{
+  "id": "green-card-family",
+  "name": "Green Card - Family (I-130 + I-485)",
+  "summary": "Family-based green card for a relative of a U.S. citizen or permanent resident, filed as a concurrent I-130/I-485 package when the beneficiary is in the U.S. and a visa is available.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-130", "title": "Petition for Alien Relative", "edition": "04/01/24", "role": "main", "source": "i-130instr.txt" },
+    { "form": "I-130A", "title": "Supplemental Information for Spouse Beneficiary", "edition": "04/01/24", "role": "companion", "when": { "question": "relationship", "equals": "Spouse" }, "source": "i-130instr.txt" },
+    { "form": "I-485", "title": "Application to Register Permanent Residence or Adjust Status", "edition": "09/18/26", "role": "companion", "when": { "question": "concurrentI485", "equals": "Yes" }, "source": "i-485instr.txt" },
+    { "form": "I-864", "title": "Affidavit of Support Under Section 213A of the INA", "edition": "verify on uscis.gov/i-864", "role": "companion", "when": { "question": "concurrentI485", "equals": "Yes" }, "note": "Required for most family-based adjustment applicants (I-485 instructions, Affidavit of Support)." },
+    { "form": "I-693", "title": "Report of Immigration Medical Examination and Vaccination Record", "edition": "civil surgeon completes", "role": "companion", "when": { "question": "concurrentI485", "equals": "Yes" }, "note": "Must be submitted with the I-485 or it may be rejected (I-485 instructions, item 9). Sealed by the civil surgeon; not auto-filled." },
+    { "form": "I-765", "title": "Application for Employment Authorization", "edition": "verify on uscis.gov/i-765", "role": "optional", "when": { "question": "wantsEad", "equals": "Yes" } },
+    { "form": "I-131", "title": "Application for Travel Documents", "edition": "verify on uscis.gov/i-131", "role": "optional", "when": { "question": "wantsAdvanceParole", "equals": "Yes" } }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-130 (and uscis.gov/i-485 for concurrent filing).", "fee": "See Form G-1055 fee schedule at uscis.gov/g-1055. Each form has its own fee." },
+  "blocks": ["applicant", "address", "entry", "biographic", "family", "employment", "criminal"],
+  "questions": [
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "petitionerName", "label": "Petitioner's full name", "type": "text", "required": true },
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "petitionerStatus", "label": "Petitioner's status", "type": "select", "options": ["U.S. citizen", "Lawful permanent resident", "U.S. national"], "required": true },
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "petitionerDob", "label": "Petitioner's date of birth", "type": "date", "required": true },
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "petitionerAddress", "label": "Petitioner's address", "type": "textarea", "required": true },
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "relationship", "label": "The beneficiary (you) is the petitioner's", "type": "select", "options": ["Spouse", "Child", "Parent", "Brother/Sister"], "required": true },
+    { "section": "The petitioner (U.S. citizen or permanent resident)", "id": "petitionerLprViaMarriage", "label": "Did the petitioner get permanent residence through a prior marriage?", "type": "yesno", "when": { "question": "relationship", "equals": "Spouse" } },
+    { "section": "Filing plan", "id": "concurrentI485", "label": "Will you file Form I-485 (adjust status in the U.S.) at the same time?", "type": "yesno", "required": true },
+    { "section": "Filing plan", "id": "wantsEad", "label": "Do you want a work permit (Form I-765) while the case is pending?", "type": "yesno" },
+    { "section": "Filing plan", "id": "wantsAdvanceParole", "label": "Do you need permission to travel (Form I-131) while the case is pending?", "type": "yesno" },
+    { "section": "Filing plan", "id": "sponsorIncome", "label": "Sponsor's most recent yearly income (from the tax return)", "type": "text", "when": { "question": "concurrentI485", "equals": "Yes" } },
+    { "section": "Filing plan", "id": "householdSize", "label": "Sponsor's household size (including the immigrant)", "type": "text", "when": { "question": "concurrentI485", "equals": "Yes" } }
+  ],
+  "checklist": [
+    { "id": "petitioner_status_proof", "label": "Petitioner's proof of U.S. citizenship or permanent residence", "required": true, "help": "One of: U.S. birth certificate, naturalization or citizenship certificate, FS-240 Consular Report of Birth Abroad, unexpired U.S. passport, or front and back of the Green Card.", "source": "I-130 Instructions 04/01/24, What documents do you need to show that you are a U.S. citizen / lawful permanent resident" },
+    { "id": "marriage_certificate", "label": "Marriage certificate", "required": true, "when": { "question": "relationship", "equals": "Spouse" }, "source": "I-130 Instructions 04/01/24, item 5.A(1)" },
+    { "id": "prior_marriage_termination", "label": "Divorce decrees or death certificates ending any prior marriages (both spouses)", "required": false, "help": "Needed if either of you was married before.", "source": "I-130 Instructions 04/01/24, item 5.A(2)" },
+    { "id": "photos_petitioner", "label": "2 passport-style photos of the petitioner (taken within 30 days)", "required": true, "when": { "question": "relationship", "equals": "Spouse" }, "help": "2x2 inches, color, white background. Bring the printed photos to the office; upload a phone picture so we can check them.", "source": "I-130 Instructions 04/01/24, item 5.A(3)" },
+    { "id": "photos_beneficiary", "label": "2 passport-style photos of the beneficiary", "required": true, "help": "2x2 inches, color, white background, taken recently.", "source": "I-130 item 5.A(3); I-485 Instructions 09/18/26, item 1" },
+    { "id": "bona_fide_marriage", "label": "Proof of a real marriage (joint lease or deed, joint bank accounts, joint taxes, children's birth certificates, photos together)", "required": true, "when": { "question": "relationship", "equals": "Spouse" }, "help": "Upload as many as you can. Each file can be one type of proof.", "source": "I-130 Instructions 04/01/24, item 5.A NOTE (1)-(6)" },
+    { "id": "third_party_affidavits", "label": "Affidavits from friends or family who know your marriage", "required": false, "when": { "question": "relationship", "equals": "Spouse" }, "help": "Each affidavit needs the writer's full name, address, date and place of birth, and how they know about your marriage.", "source": "I-130 Instructions 04/01/24, item 5.A NOTE (5)" },
+    { "id": "beneficiary_birth_certificate", "label": "Beneficiary's birth certificate (must list at least one parent)", "required": true, "source": "I-485 Instructions 09/18/26, item 3; I-130 items 5.B-G" },
+    { "id": "petitioner_birth_certificate", "label": "Petitioner's birth certificate (to show the parent or sibling relationship)", "required": true, "when": { "question": "relationship", "in": ["Parent", "Brother/Sister"] }, "source": "I-130 Instructions 04/01/24, items 5.E-G" },
+    { "id": "name_change", "label": "Legal name change documents (if names differ between documents)", "required": false, "source": "I-130 Instructions 04/01/24, item 7" },
+    { "id": "inspection_admission", "label": "Proof of entry: passport visa page, entry stamp, and Form I-94", "required": true, "when": { "question": "concurrentI485", "equals": "Yes" }, "source": "I-485 Instructions 09/18/26, item 4" },
+    { "id": "medical_i693", "label": "Sealed Form I-693 medical exam from a civil surgeon", "required": true, "when": { "question": "concurrentI485", "equals": "Yes" }, "help": "Do not open the envelope. Bring it to the office.", "source": "I-485 Instructions 09/18/26, item 9" },
+    { "id": "sponsor_tax_returns", "label": "Sponsor's most recent federal tax return or IRS transcript, W-2s, and recent pay stubs", "required": true, "when": { "question": "concurrentI485", "equals": "Yes" }, "source": "I-485 Instructions 09/18/26, Affidavit of Support; Form I-864 instructions" },
+    { "id": "arrest_records", "label": "Certified police and court records for every arrest or charge", "required": true, "when": { "question": "everArrested", "equals": "Yes" }, "source": "I-485 Instructions 09/18/26, item 10" }
+  ],
+  "coverLetter": {
+    "re": "Form I-130, Petition for Alien Relative{{#concurrentI485}}, with concurrently filed Form I-485{{/concurrentI485}}",
+    "request": "On behalf of the petitioner, {{petitionerName}}, we respectfully submit the enclosed Form I-130 for the classification of {{givenName}} {{familyName}} as the {{relationship}} of a {{petitionerStatus}}.",
+    "points": [
+      "The petitioner is a {{petitionerStatus}}, as shown by the enclosed status evidence.",
+      "The qualifying relationship is established by the enclosed civil documents.",
+      "For spouses: the marriage was entered in good faith, as shown by the enclosed joint records."
+    ]
+  },
+  "rules": ["visaBulletinNote"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

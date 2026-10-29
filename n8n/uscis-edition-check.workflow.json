@@ -1,0 +1,199 @@
+{
+  "id": "ZIOijRHJMX7oq0L3",
+  "name": "2A - Weekly USCIS form edition check",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1
+              ],
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "c2e6a9f1-0001-4b00-9000-000000000001",
+      "name": "Every Monday 8am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "__API_BASE__/api/editions",
+        "options": {},
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        }
+      },
+      "id": "c2e6a9f1-0002-4b00-9000-000000000002",
+      "name": "Editions our presets use",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text",
+              "outputPropertyName": "page"
+            }
+          },
+          "batching": {
+            "batch": {
+              "batchSize": 1,
+              "batchInterval": 3000
+            }
+          }
+        }
+      },
+      "id": "c2e6a9f1-0003-4b00-9000-000000000003",
+      "name": "Fetch form page on uscis.gov",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        300
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Compare the edition shown on uscis.gov with the edition each preset was built on.\nconst expected = $('Editions our presets use').all().map(i => i.json);\nreturn $input.all().map((item, i) => {\n  const exp = expected[i];\n  const page = item.json.page || '';\n  const m = page.match(/Edition\\s*Date[^0-9]{0,40}(\\d{2}\\/\\d{2}\\/\\d{2})/i);\n  const live = m ? m[1] : null;\n  const status = !page ? 'could not load page' : !live ? 'edition not found on page - check by hand' : live === exp.edition ? 'current' : 'NEW EDITION - update preset and field map';\n  return { json: { form: exp.form, presetEdition: exp.edition, uscisEdition: live, status, url: exp.url, usedBy: exp.usedBy.join(', ') } };\n});"
+      },
+      "id": "c2e6a9f1-0004-4b00-9000-000000000004",
+      "name": "Compare editions",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "current",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "c2e6a9f1-0005-4b00-9000-000000000005",
+      "name": "Needs attention?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        960,
+        300
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "c2e6a9f1-0006-4b00-9000-000000000006",
+      "name": "Alert staff (connect email or Slack here)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        220
+      ]
+    }
+  ],
+  "connections": {
+    "Every Monday 8am": {
+      "main": [
+        [
+          {
+            "node": "Editions our presets use",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Editions our presets use": {
+      "main": [
+        [
+          {
+            "node": "Fetch form page on uscis.gov",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch form page on uscis.gov": {
+      "main": [
+        [
+          {
+            "node": "Compare editions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare editions": {
+      "main": [
+        [
+          {
+            "node": "Needs attention?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Needs attention?": {
+      "main": [
+        [
+          {
+            "node": "Alert staff (connect email or Slack here)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}

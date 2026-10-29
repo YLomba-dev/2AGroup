@@ -1,0 +1,126 @@
+{
+  "id": "Ev7Qm2cAseEvnt01",
+  "name": "2A - Case events (automatic)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "case-event",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "d3f7a0c2-0001-4c00-9000-000000000001",
+      "name": "Case event",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "2a-case-event"
+    },
+    {
+      "parameters": {
+        "url": "=__API_BASE__/api/automation/cases/{{ $json.body.caseId }}/summary?documentId={{ $json.body.documentId || '' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d3f7a0c2-0002-4c00-9000-000000000002",
+      "name": "Case summary",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Decides what happens after each change in the database. Returns zero or more actions.\n// Client messages use only what the client may see; internal notes stay with staff.\nconst e = $('Case event').first().json.body;\nconst s = $input.first().json;\nconst out = [];\nconst act = (action, body = {}) => out.push({ json: { caseId: s.caseId, action, body } });\nconst msg = (text, extra = {}) => act('message', { text, kind: e.event, ...extra });\nconst hi = 'Hello ' + s.firstName + ',';\n\nswitch (e.event) {\n  case 'case.ready':\n    // Everything required is in: build the draft package for attorney review.\n    act('auto-assemble');\n    break;\n  case 'case.created':\n    if (s.hasClientAccount) msg(hi + ' welcome to your 2A Group Corp portal for your ' + s.preset + ' case (' + s.caseNumber + ').\\nStart with the Documents tab: upload each item on the list (a clear phone photo is fine). Then answer the questions in \"My information\". You can write to us here any time.');\n    break;\n  case 'document.reviewed':\n    if (s.document && s.document.status === 'rejected') msg(hi + ' we reviewed \"' + s.document.name + '\" for \"' + s.document.item + '\" and need a new file.' + (s.document.note ? '\\nWhat to fix: ' + s.document.note : '') + '\\nPlease upload it again in the Documents tab.');\n    break;\n  case 'package.built':\n    if (e.version === 1 && !e.forced) msg(hi + ' good news: we have everything we need. Your attorney is now reviewing your ' + s.preset + ' petition. We will write here if anything else is needed.');\n    msg('Draft v' + e.version + ' was built' + (e.forced ? ' with missing items (forced)' : '') + ' and is waiting for attorney approval.', { internal: true });\n    break;\n  case 'package.approved':\n    msg(hi + ' your attorney approved your petition. We are printing it and will send it to USCIS. We will tell you here when it is mailed and when the receipt arrives.');\n    break;\n  case 'package.returned':\n    msg('The attorney returned draft v' + e.version + '. See the Package tab for the changes needed.', { internal: true });\n    break;\n  case 'case.stage_changed': {\n    const text = {\n      'Filed': 'your petition was mailed to USCIS. The receipt notice usually arrives by mail within a few weeks. Please send us a photo of it when it comes.',\n      'Receipt received': 'USCIS received your petition' + (s.receiptNumber ? ' (receipt number ' + s.receiptNumber + ')' : '') + '. You can check its status at egov.uscis.gov/casestatus. Keep the notice in a safe place.',\n      'Biometrics': 'USCIS will schedule a biometrics appointment (fingerprints and photo). Bring the appointment notice and your ID. Tell us right away if you cannot go on that date.',\n      'Interview': 'your case is at the interview stage. We will contact you to prepare. Bring the originals of every document you sent.',\n      'Decision': 'USCIS made a decision on your case. We will contact you to explain it and the next steps.',\n    }[e.to];\n    if (text) msg(hi + ' ' + text);\n    break;\n  }\n}\nreturn out;"
+      },
+      "id": "d3f7a0c2-0003-4c00-9000-000000000003",
+      "name": "Decide what to do",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=__API_BASE__/api/automation/cases/{{ $json.caseId }}/{{ $json.action }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "d3f7a0c2-0004-4c00-9000-000000000004",
+      "name": "Do it (build draft or message)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Case event": {
+      "main": [
+        [
+          {
+            "node": "Case summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Case summary": {
+      "main": [
+        [
+          {
+            "node": "Decide what to do",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Decide what to do": {
+      "main": [
+        [
+          {
+            "node": "Do it (build draft or message)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}

@@ -1,0 +1,54 @@
+{
+  "id": "asylum",
+  "name": "Asylum (Affirmative, I-589)",
+  "summary": "Affirmative asylum and withholding of removal application filed with USCIS, including spouse and unmarried children under 21 as derivatives.",
+  "confidential": true,
+  "confidentialityNote": "Asylum application information is confidential under 8 CFR 208.6. Do not disclose to third parties without written consent.",
+  "forms": [
+    { "form": "I-589", "title": "Application for Asylum and for Withholding of Removal", "edition": "07/28/26", "role": "main", "source": "i-589instr.txt" },
+    { "form": "I-589 Supplement A", "title": "Additional spouse/children (Part A.II)", "edition": "07/28/26", "role": "conditional", "when": { "question": "childrenCount", "gt": 4 } },
+    { "form": "I-589 Supplement B", "title": "Additional information / why corroboration is unavailable", "edition": "07/28/26", "role": "optional" }
+  ],
+  "filing": { "where": "If not in immigration court: mail as shown on uscis.gov/i-589. If in removal proceedings, file with the Immigration Court instead (not this preset).", "fee": "See Form G-1055 at uscis.gov/g-1055 (I-589 Instructions 07/28/26, section VIII)." },
+  "blocks": ["applicant", "address", "entry", "family", "employment", "criminal"],
+  "questions": [
+    { "section": "Your claim", "id": "nativeLanguage", "label": "Native language and other languages you speak fluently", "type": "text", "required": true },
+    { "section": "Your claim", "id": "religion", "label": "Religion (optional)", "type": "text" },
+    { "section": "Your claim", "id": "ethnicGroup", "label": "Race, ethnic or tribal group", "type": "text", "required": true },
+    { "section": "Your claim", "id": "grounds", "label": "Why are you seeking protection? (choose all that apply: race, religion, nationality, political opinion, membership in a particular social group, torture)", "type": "text", "required": true },
+    { "section": "Your claim", "id": "pastHarm", "label": "Have you, your family or close friends ever been harmed, mistreated or threatened? Describe what happened, when, who did it and why.", "type": "textarea", "required": true },
+    { "section": "Your claim", "id": "fearReturn", "label": "Do you fear harm if you return? Who would harm you and why?", "type": "textarea", "required": true },
+    { "section": "Your claim", "id": "orgMembership", "label": "Groups, parties or organizations you or your family belonged to in your home country", "type": "textarea" },
+    { "section": "Your claim", "id": "otherCountries", "label": "Countries you passed through or lived in before coming to the U.S., and whether you applied for protection there", "type": "textarea", "required": true },
+    { "section": "Your family on this application", "id": "includeSpouse", "label": "Include your spouse in the U.S. as a derivative?", "type": "yesno", "required": true },
+    { "section": "Your family on this application", "id": "childrenCount", "label": "Number of children you have (any age, anywhere)", "type": "text", "required": true },
+    { "section": "Your family on this application", "id": "siblings", "label": "Your brothers and sisters (names, cities and countries of residence)", "type": "textarea", "required": true },
+    { "section": "Your family on this application", "id": "lastAddressAbroad", "label": "Your last address in the country where you fear persecution, and address history for the last 5 years before coming", "type": "textarea", "required": true },
+    { "section": "Your family on this application", "id": "education", "label": "Schools attended (name, location, from - to)", "type": "textarea", "required": true }
+  ],
+  "checklist": [
+    { "id": "personal_declaration", "label": "Your written personal declaration (staff will help you write it)", "required": true, "help": "We build it with you from your intake answers. Upload any notes or drafts you have.", "source": "I-589 Instructions 07/28/26, VII Additional Evidence" },
+    { "id": "passports_cover_to_cover", "label": "Copy of every passport or travel document you have, cover to cover", "required": true, "source": "I-589 Instructions 07/28/26, VI item 3" },
+    { "id": "us_immigration_docs", "label": "U.S. immigration documents (Form I-94, parole papers, notices)", "required": true, "source": "I-589 Instructions 07/28/26, VI item 3" },
+    { "id": "other_id", "label": "Other identity documents (birth certificate, national ID card, driver's license)", "required": false, "help": "Recommended by USCIS.", "source": "I-589 Instructions 07/28/26, VI item 4" },
+    { "id": "relationship_spouse", "label": "Marriage certificate (and proof prior marriages ended)", "required": true, "when": { "question": "includeSpouse", "equals": "Yes" }, "source": "I-589 Instructions 07/28/26, VI item 2" },
+    { "id": "relationship_children", "label": "Birth certificates or school records for each child included", "required": false, "source": "I-589 Instructions 07/28/26, VI item 2" },
+    { "id": "corroboration_specific", "label": "Evidence of what happened to you (police reports, medical records, photos, threats, membership cards, witness letters)", "required": true, "help": "If you cannot get this evidence, tell us why. USCIS requires an explanation (Supplement B).", "source": "I-589 Instructions 07/28/26, VII" },
+    { "id": "country_conditions", "label": "Country conditions reports and news articles", "required": true, "staffOnly": true, "help": "Staff gather reports for the country of feared persecution.", "source": "I-589 Instructions 07/28/26, VII" },
+    { "id": "psych_report", "label": "Health professional's report (if it is hard for you to talk about past harm)", "required": false, "source": "I-589 Instructions 07/28/26, VII" },
+    { "id": "arrest_records", "label": "Police and court records for any arrest or charge", "required": true, "when": { "question": "everArrested", "equals": "Yes" } }
+  ],
+  "coverLetter": {
+    "re": "Form I-589, Application for Asylum and for Withholding of Removal",
+    "request": "We respectfully submit the enclosed Form I-589 on behalf of {{givenName}} {{familyName}}, a national of {{citizenship}}, seeking asylum, withholding of removal, and protection under the Convention Against Torture.",
+    "points": [
+      "The applicant suffered past persecution and/or has a well-founded fear of future persecution.",
+      "The harm is on account of a protected ground: {{grounds}}.",
+      "The application is filed within one year of the applicant's last arrival, or an exception applies.",
+      "Corroborating evidence is enclosed; where it is not reasonably available, the reason is explained."
+    ]
+  },
+  "rules": ["asylumOneYear", "asylumEadClock"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"],
+  "assemblyNote": "I-589 Instructions 07/28/26, section X: original I-589 first, then supplementary sheets, supporting documentation, then relationship evidence. Attorney decides whether the cover letter goes on top."
+}

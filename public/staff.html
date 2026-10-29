@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f3a5f">
+  <title>Case Dashboard · 2A Group Corp</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="wrap">
+    <div class="layout">
+      <aside id="sidebar">
+        <div class="card">
+          <div class="row" style="justify-content:space-between"><h2>Cases</h2><button id="newCaseBtn" class="primary">New case</button></div>
+          <form id="newCase" class="grid" hidden style="margin:10px 0">
+            <input name="clientName" placeholder="Client full name" required>
+            <input name="clientEmail" type="email" placeholder="Client email (sends portal invitation)">
+            <select name="preset" required></select>
+            <div class="row"><button class="primary" type="submit">Create</button><button type="button" id="cancelNew">Cancel</button></div>
+          </form>
+          <input id="filter" type="search" placeholder="Search name, case number or type" style="margin:8px 0">
+          <div class="chips" id="stageFilter"></div>
+          <ul class="case-list" id="cases"></ul>
+        </div>
+      </aside>
+      <main id="detail"></main>
+    </div>
+  </div>
+  <script src="/vendor/supabase.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/staff.js"></script>
+</body>
+</html>

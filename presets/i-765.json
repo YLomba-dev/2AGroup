@@ -1,0 +1,35 @@
+{
+  "id": "i-765",
+  "name": "I-765 Work Permit (EAD)",
+  "summary": "Initial or renewal employment authorization in the category the client qualifies for.",
+  "confidential": false,
+  "instructionsLoaded": false,
+  "instructionsNote": "I-765 instructions were not in the reference set yet. Add i-765instr.pdf to reference/ and re-check this checklist and the category list.",
+  "forms": [
+    { "form": "I-765", "title": "Application for Employment Authorization", "edition": "verify on uscis.gov/i-765", "role": "main" }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-765 (depends on eligibility category). Many categories can file online.", "fee": "See Form G-1055 at uscis.gov/g-1055. The fee depends on category." },
+  "blocks": ["applicant", "address", "entry", "biographic"],
+  "questions": [
+    { "section": "Your request", "id": "requestType", "label": "Is this your first work permit, a renewal, or a replacement?", "type": "select", "options": ["Initial", "Renewal", "Replacement (lost, stolen or damaged)"], "required": true },
+    { "section": "Your request", "id": "eligibilityCategory", "label": "Eligibility category", "type": "select", "options": ["(c)(8) Pending asylum", "(c)(9) Pending adjustment (I-485)", "(c)(10) Pending cancellation", "(a)(5) Asylee", "(c)(31) VAWA approved", "(a)(16) T-1", "(c)(25) T derivative", "Other"], "required": true },
+    { "section": "Your request", "id": "categoryReceipt", "label": "Receipt number of the pending or approved case this is based on", "type": "text", "required": true },
+    { "section": "Your request", "id": "asylumFiledDate", "label": "Date your complete asylum application was filed", "type": "date", "when": { "question": "eligibilityCategory", "equals": "(c)(8) Pending asylum" }, "required": true },
+    { "section": "Your request", "id": "currentEadExpiry", "label": "Current work permit expiration date", "type": "date", "when": { "question": "requestType", "equals": "Renewal" }, "required": true }
+  ],
+  "checklist": [
+    { "id": "photos", "label": "2 passport-style photos", "required": true },
+    { "id": "i94", "label": "Form I-94 and passport biographic page", "required": true },
+    { "id": "prior_ead", "label": "Front and back of your current or previous work permit", "required": false, "help": "Required for renewal or replacement." },
+    { "id": "category_evidence", "label": "Proof of your category (receipt or approval notice for the asylum, I-485 or other case)", "required": true }
+  ],
+  "coverLetter": {
+    "re": "Form I-765, Application for Employment Authorization - category {{eligibilityCategory}}",
+    "request": "We respectfully submit the enclosed Form I-765 on behalf of {{givenName}} {{familyName}}, requesting {{requestType}} employment authorization under category {{eligibilityCategory}}.",
+    "points": [
+      "The applicant is eligible under the stated category, as shown by the enclosed receipt or approval notice ({{categoryReceipt}})."
+    ]
+  },
+  "rules": ["asylumEadClock", "eadRenewalWindow"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

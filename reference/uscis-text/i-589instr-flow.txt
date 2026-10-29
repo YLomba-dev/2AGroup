@@ -1,0 +1,378 @@
+Instructions for Application for Asylum and for Withholding of Removal
+Department of Homeland Security U.S. Citizenship and Immigration Services
+
+USCIS Form I-589
+OMB No. 1615-0067 Expires 09/30/2027
+
+What Is the Purpose of This Form?
+This application is used to apply for asylum in the United States and for withholding of removal (formerly called "withholding of deportation"). This application may also be used to apply for protection under the Convention Against Torture. You may file this application if you are physically present in the United States, and you are not a U.S. citizen.
+NOTE: You must submit an application for asylum within 1 year of arriving in the United States, unless there are changed circumstances that materially affect your eligibility for asylum or extraordinary circumstances directly related to your failure to file within 1 year. (See Part C, Additional Information about Your Application, in Section V on Part 1 of the instructions for further explanation.)
+You may include in your application your spouse and unmarried children who are under 21 years of age and physically present in the United States. You must submit certain documents for your spouse and each child included as required by these instructions. Children 21 years of age or older and married children must file separate applications. If you are granted asylum and your spouse and/or any unmarried children under 21 years of age are outside the United States, you may file Form I-730, Refugee/Asylee Relative Petition, for them to gain similar benefits.
+Instruction Sections: Filing Information and How Your Application Will Be Processed
+The instructions are divided into two sections:
+1. The first section has filing information. This section discusses basic eligibility criteria and guides you through filling out and filing the application.
+2. The second section explains how your application will be processed. This section also describes potential interim benefits available while your application is pending.
+Read these instructions carefully. The instructions will help you complete your application and understand how it will be processed. If you have questions about your eligibility, how to complete the application, or the asylum process, you may wish to consult an attorney or other qualified person to assist you. (See Part I Section IV Right to Counsel of these instructions.)
+
+WARNING: Applicants in the United States unlawfully are subject to removal if their asylum or withholding claims are not granted by an asylum officer or an immigration judge. Any information provided in completing this application may be used as a basis for the institution of, or as evidence in, removal proceedings, even if the application is later withdrawn.
+Applicants determined to have knowingly made a frivolous application for asylum will be permanently ineligible for any benefits under the Immigration and Nationality Act (INA). You may not avoid a frivolous finding simply because someone advised you to provide false information in your asylum application.
+If filing with U.S. Citizenship and Immigration Services (USCIS), unexcused failure to appear for an appointment or to provide biometrics (such as fingerprints) and other biographical information within the time allowed may delay eligibility for employment authorization and result in an asylum officer dismissing your asylum application or referring it to an immigration judge. Applicants and eligible dependents in removal proceedings who fail without good cause to provide USCIS with their biometrics or their biographical information as required within the time allowed may have their applications found abandoned by the immigration judge. See sections 208(d) (5)(A) and 208(d)(6) of the INA and 8 Code of Federal Regulations (CFR) sections 208.10, 1208.10, 208.20, 1003.47(d), and 1208.20.
+If USCIS issues a request for evidence prior to interview scheduling, failure to respond to the request for evidence by the required date may result in an asylum officer referring your application to an immigration judge. See 8 CFR section 208.9(a)(2).
+
+Form I-589 Instructions 07/28/26
+
+Table of Contents
+
+Part 1. Filing Instructions..................................................................2
+
+I. Who May Apply and Filing Deadline.s.................................2
+
+II. Basis of Eligibili.t.y................................................................3
+
+A. Asylum..........................................................................3
+
+B. Withholding of Remova.l...............................................3
+
+C. Deferral of Removal Under the Convention Against Torture....................................4
+
+D. Legal Sources and Guidance Relating to Eligibility.....4
+
+III. Confidentiality.....................................................................4
+
+IV. Right to Couns.e..l..................................................................4
+
+V. Obtaining and Completing the Form .................................5
+
+Part A.I. Information About You...................................5
+
+Part A.II. Spouse and Children........................................5
+
+Part A.III. Information About Your Background.....................................................6
+
+Part B.
+
+Information About Your Application......................................................6
+
+Part C. Additional Information About Your Application....................................6
+
+Part D. Your Signature...................................................7
+
+Part E. Signature of Person Preparing Form, If Other than You....................................7
+
+Part F. To Be Completed at Asylum Interview, If Applicable.....................................7
+
+Part G. To Be Completed at Removal Hearing, If Applicable........................................7
+
+VI. Required Documents That You Must Submit With Your Application ..........................................8
+
+VII. Additional Evidence That You Must Submit.......................................................8
+
+VIII. Fee.......................................................................................8
+
+IX. Biometrics, Including Fingerprints and Photographs.............................................8
+
+X. Organizing Your Application.............................................9
+
+XI. Incomplete Asylum Applications .......................................9
+
+XII. Where To File?...................................................................9
+
+Part 2. Information Regarding Post-Filing Requirements..................................................10
+
+I. Notification Requirements When Your Address Changes...........................................10
+
+II. Referral Without Interview.................................................10
+
+III. Asylum Interview Procedures, If Applicable.....................11
+
+IV. Status While Your Application Is Pending......................................................11
+
+V. Travel Outside the United States .......................................11
+
+VI. Employment Authorization While Your Application Is Pending.......................................................11
+
+DHS Privacy Notice .........................................................................12
+
+USCIS Forms and Information.......................................................12
+
+Penalties.............................................................................................12
+
+Paperwork Reduction Act...............................................................12
+
+Supplements to Form I-589.............................................................12
+
+Part 1. Filing Instructions
+I. Who May Apply and Filing Deadlines
+You may apply for asylum irrespective of your immigration status and even if you are in the United States unlawfully unless otherwise provided by statute or regulations.
+You MUST file this application within 1 year after you arrived in the United States, unless you can show that there are changed circumstances that affect your eligibility for asylum or extraordinary circumstances that prevented you from filing within 1 year. (See Part I Section IV, Right to Counsel of these instructions.)
+An Unaccompanied Alien Child (UAC) is a legal term referring to a non-U.S. citizen child who has no lawful immigration status in the United States; has not attained 18 years of age; and has no parent or legal guardian in the United States, or for whom no parent or legal guardian in the United States is available to provide care and physical custody. See 6 U.S.C. 279(g)(2). The Asylum Division has initial jurisdiction over an asylum application filed by a UAC, including a UAC in removal proceedings before an immigration judge. For more information about the asylum process for UAC, visit the USCIS asylum website at uscis.gov/humanitarian/refugeesasylum/asylum/minor-children-applying-asylumthemselves.
+Detailed UAC filing instructions are found in Part 1 Section XII of these instructions.
+If you have previously been denied asylum by an immigration judge or the Board of Immigration Appeals, you must show that there are changed circumstances that affect your eligibility for asylum.
+The determination of whether you are permitted to apply for asylum will be made once your application has been reviewed by an asylum officer (with or without an asylum interview) or you have had a hearing before an immigration judge. Even if you are not eligible to apply for asylum for the reasons stated above, you may still be eligible to apply for withholding of removal under section 241(b)(3) of the INA or under the Convention Against Torture before the Immigration Court.
+Pursuant to 48 U.S.C. 1806(a)(7), and 8 CFR Sections 208.5 and 1208.5 if you are physically present in, or arriving in the Commonwealth of the Northern Mariana Islands, you may not apply for asylum until January 1, 2030; however, you may use Form I-589, Application for Asylum and for Withholding of Removal, to apply for withholding of removal and for protection from removal under the Convention Against Torture in Immigration Court proceedings.
+
+Form I-589 Instructions 07/28/26
+
+Part 1. Filing Instructions (continued)
+II. Basis of Eligibility
+A. Asylum To qualify for asylum, you must establish that you are a refugee who is unable or unwilling to return to his or her country of nationality, or last habitual residence if you have no nationality, because of persecution or a well-founded fear of persecution on account of race, religion, nationality, membership in a particular social group, or political opinion. This means that you must establish that race, religion, nationality, membership in a particular social group, or political opinion was or will be at least one central reason for your persecution or why you fear persecution. (See section 208 of the INA; 8 CFR sections 208 and 1208, et seq.) If you are granted asylum, you and any eligible spouse or child included in your application can remain and work in the United States and may eventually adjust to lawful permanent resident status. If you are not granted asylum, the Department of Homeland Security (DHS) may use the information you provide in this application to establish that you are removable from the United States.
+B. Withholding of Removal Your asylum application is also considered to be an application for withholding of removal under section 241(b) (3) of the INA, as amended. It may also be considered an application for withholding of removal under the Convention Against Torture if you checked the box at the top of Page 1 of the application, or if the evidence you present indicates that you may be tortured in the country of removal. (See 8 CFR sections 208.13(c)(1) and 1208.13(c)(1)). If asylum is not granted, you may still be eligible for withholding of removal. Regardless of the basis for the withholding application, you will not be eligible for withholding if you:
+1. Assisted in Nazi persecution or engaged in genocide; 2. Have persecuted another person; 3. Have been convicted by a final judgment of a
+particularly serious crime and therefore represent a danger to the community of the United States; 4. Are considered for serious reasons to have committed a serious non-political crime outside the United States; or 5. Represent a danger to the security of the United States. (See section 241(b)(3) of the INA; 8 CFR sections 208.16 and1208.16.)
+Form I-589 Instructions 07/28/26
+
+Withholding of Removal Under Section 241(b)(3) of the INA
+To qualify for withholding of removal under section 241(b)(3) of the INA, you must establish that it is more likely than not that your life or freedom would be threatened on account of race, religion, nationality, membership in a particular social group, or political opinion in the proposed country of removal.
+If you obtain an order withholding your removal, you cannot be removed to the country where your life or freedom would be threatened. This means that you may be removed to a third country where your life or freedom would not be threatened. Withholding of removal does not adhere derivatively to any spouse or child included in the application; they would have to apply for such protection on their own.
+If you are granted withholding of removal, this would not give you the right to bring your relatives to the United States. It also would not give you the right to apply for lawful permanent resident status in the United States.
+Withholding of Removal Under the Convention Against Torture
+The Convention Against Torture refers to the United Nations Convention Against Torture and Other Cruel, Inhuman, or Degrading Treatment or Punishment.
+To be granted withholding of removal to a country under Article 3 of the Convention Against Torture, as implemented in U.S. law, you must show that it is more likely than not that you would be tortured in that country.
+"Torture" is defined at 8 CFR sections 208.18(a) and 1208.18(a), which incorporate the definitions in Article 1 of the Convention Against Torture as implemented in U.S. law. For an act to be considered torture, it must be an extreme form of cruel and inhuman treatment, it must cause severe physical or mental pain and suffering, and it must be specifically intended to cause severe pain and suffering.
+Torture is an act inflicted for such purposes as obtaining from the victim or a third person information or a confession, punishing the victim for an act he or she or a third person has committed or is suspected of having committed, intimidating or coercing the victim or a third person, or for any reason based on discrimination of any kind.
+Torture must be inflicted by or at the instigation of, or with the consent or acquiescence of, a public official or other person acting in an official capacity. The victim must be in the custody or physical control of the torturer. Torture does not include pain or suffering that arises only from, is inherent in, or is incidental to lawful sanctions, although such actions may not defeat the objective and purpose of the Convention Against Torture.
+Form I-589, will be considered an application for withholding of removal under the Convention Against Torture if you tell the immigration judge that you would like to be considered for withholding of removal under the Convention Against Torture, or if it is determined that evidence indicates that you may be tortured in the country of removal.
+
+Part 1. Filing Instructions (continued)
+To apply for withholding of removal under the Convention Against Torture, you must check the box at the top of Page 1 of the application and fully complete Form I-589.
+You must include a detailed explanation of why you fear torture in response to Part B, Question 4 of the application. In your response, you must write about any mistreatment you experienced or any threats made against you by a government or somebody connected to a government.
+Only immigration judges, and the Board of Immigration Appeals may grant withholding of removal or deferral of removal under the Convention Against Torture. If you have applied for asylum, the immigration judge will first determine whether you are eligible for asylum under section 208 of the INA and for withholding of removal under section 241(b)(3) of the INA. If you are not eligible for either asylum under section 208 of the INA or withholding of removal under section 241(b)(3) of the INA, the immigration judge will determine whether the Convention Against Torture prohibits your removal to a country where you fear torture.
+As implemented in U.S. law, Article 3 of the Convention Against Torture prohibits the United States from removing you to a country in which it is more likely than not that you would be subject to torture. The Convention Against Torture does not prohibit the United States from returning you to any other country where you would not be tortured. This means that you may be removed to a third country where you would not be tortured. Withholding of removal under the Convention Against Torture does not allow you to adjust to lawful permanent resident status or to petition to bring family members to come to, or remain in, the United States.
+C. Deferral of Removal Under the Convention Against Torture
+If it is more likely than not that you will be tortured in a country but you are ineligible for withholding of removal, your removal will be deferred under 8 CFR sections 208.17(a) and 1208.17(a). Deferral of removal does not confer any lawful or permanent immigration status in the United States and does not necessarily result in release from detention. Deferral of removal is effective only until it is terminated. Deferral of removal is subject to review and termination if it is determined that it is no longer more likely than not that you would be tortured in the country to which your removal is deferred or if you request that your deferral be terminated.
+D. Legal Sources and Guidance Relating to Eligibility
+The documents listed below are some of the legal sources and guidance relating to asylum, withholding of removal under section 241(b)(3) of the INA, and withholding of removal or deferral of removal under the Convention Against Torture. These sources are provided for reference only. You do not need to refer to them in order to complete your application.
+Form I-589 Instructions 07/28/26
+
+1. Section 101(a)(42) of the INA, 8 U.S.C. 1101(a)(42) (defining"refugee");
+2. Section 208 of the INA, 8 U.S.C. 1158 (regarding eligibility for asylum);
+3. Section 241(b)(3) of the INA, 8 U.S.C. 1231(b)(3) (regarding eligibility for withholding of removal);
+4. Title 8 of the CFR parts 103.2, 208 and 1208, et seq.;
+5. Article 3 of the Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment as implemented by section 2242(b) or the Foreign Affairs Reform and Restructuring Act of 1998 and 8 CFR section 208, as amended by the Regulations Concerning the Convention Against Torture: Interim Rule, 64 FR 8478-8492 (February 19, 1999) (effective March 22, 1999); 64 FR 13881 (March 23, 1999);
+6. The 1967 United Nations Protocol relating to the Status of Refugees;
+7. The 1951 Convention relating to the Status of Refugees; and
+8. The Office of the United Nations High Commissioner for Refugees, Handbook on Procedures and Criteria for Determining Refugee Status (Geneva, 1992).
+III. Confidentiality
+The information collected will be used to make a determination on your application. It may also be provided to other government agencies (federal, state, local, and/or foreign) for purposes of investigation or legal action on criminal and/or civil matters and for issues arising from the adjudication of benefits. However, no information indicating that you have applied for asylum will be provided to any government or country from which you claim a fear of persecution. Regulations at 8 CFR sections 208.6 and 1208.6 protect the confidentiality of asylum claims.
+IV. Right to Counsel
+Immigration law concerning asylum and withholding of removal or deferral or removal is complex. You have a right to provide your own legal representation at an asylum interview (if you are scheduled for an interview) and during immigration proceedings before the Immigration Court at no cost to the U.S. Government.
+If you need or would like help to complete this application and to prepare your written statements, assistance from pro bono (free) attorneys and/or voluntary agencies may be available. Voluntary agencies may help you for no fee or a reduced fee, and attorneys on the list referred to below may take your case for no fee. If you have not already received from USCIS or the Immigration Court a list of attorneys and accredited representatives, you may obtain a list by calling 1-800-375-5283 or visiting the U.S. Department of Justice (DOJ), Executive Office for Immigration Review (EOIR) website at justice.gov/ eoir/list-pro-bono-legal-service-providers-map.
+
+Part 1. Filing Instructions (continued)
+Representatives of the United Nations High Commissioner for Refugees (UNHCR) may be able to assist you in identifying persons to help you complete the application. RefWorld, a resource database available on UNHCR's website or at refworld.org, provides useful country conditions information from a variety of sources. Contact information for the UNHCR is:
+United Nations High Commissioner for Refugees 1800 Massachusetts Avenue NW, Suite 500 Washington, DC 20036 Telephone: 202-296-5191 Email: usawa@unhcr.org Website: unhcr.org
+Calls from Detention Centers and Jails. Asylum-seekers in detention centers and jails may call UNHCR toll-free by dialing #566 or 1-888-272-1913 on Monday, Wednesday, and Friday, 2 p.m. - 5 p.m. (Eastern Standard Time).
+V. Obtaining and Completing the Form
+USCIS provides forms free of charge through the USCIS website. To view, print, or fill out our forms, you should use the latest version of Adobe Reader, which you can download for free at get.adobe.com/reader/. If you do not have internet access, you may call the USCIS Contact Center at 1-800-375-5283 (TTY 1-800-767-1833) and ask that we mail a form to you. The USCIS Contact Center provides information in English and Spanish.
+You must type or print all of your answers in black ink on Form I-589. Your answers must be completed in English. Forms completed in a language other than English will be returned to you. You must provide the specific information requested about you and your family and answer all the questions asked.
+If any question does not apply to you or you do not know the information requested, answer "none," "not applicable," or "unknown."
+USCIS may adjudicate your application without conducting an interview and without issuing a request for evidence. Your application and any supporting evidence that you provide now may be your only opportunity to meet your burden of proof to establish eligibility for asylum before USCIS.
+You must provide detailed information and answer the questions as completely as possible. If you file your application with missing information, we may return it to you as incomplete. If you need more space, attach Form I-589 Supplement A or B (included in the application package) and/ or additional sheet(s) indicating the question number(s) you are answering.
+You are strongly urged to attach additional written statements and documents that support your claim. Your written statements should include events, dates, and details of your experiences that relate to your claim for asylum.
+Form I-589 Instructions 07/28/26
+
+NOTE: Put your Alien Registration Number (A-Number) (if any), name (exactly as it appears in Part A.I. of the form), signature, and date on each supplemental sheet and on the cover page of any supporting documents.
+You may amend or supplement your application until a decision is issued.
+Part A.I. Information About You
+This part asks for basic information about you. Alien Registration Number (A-Number) refers to your USCIS file number. If you do not already have an A-Number, USCIS will assign one to you.
+You must provide your residential street address (the address where you physically live) in the United States in Part A.I., Question 8, of the asylum application. You may also provide a mailing address, if different from the address where you reside, in Question 9. If someone else is collecting your mail for you at your mailing address, you may enter that person's name in the "In Care Of" field in your response to Question 9. If your mailing address is a post office box, include that address in Question 9 and include a residential address where you physically live in Question 8.
+In Question 13, use the current name of the country. Do not use historical, ethnic, provincial, or other local names.
+If you entered the country with inspection, Form I-94 number referred to in Question 19b is the number on Form I-94, Arrival/Departure Record, given to you when you entered the United States. In Question 19c, enter the date and status as it appears on Form I-94. If you did not receive Form I-94, write "None." If you entered without being inspected by an immigration officer, write "No Inspection" in Question 19c in the current status or status section.
+Part A.II. Information About Your Spouse and Children
+You must list your spouse and all of your children, including your stepchildren, deceased children, adopted children, and adult children, in this application, regardless of their age, marital status, whether they are in the United States, or whether or not they are included in this application or are filing a separate asylum application.
+In addition, you may include in your asylum application your spouse and/or any children who are under 21 years of age and unmarried, if they are in the United States. Children who are married and/or children who are 21years of age or older must file separately for asylum by submitting their own Form I-589. Including your spouse and/or your children in your asylum application means that if USCIS or EOIR approves your application, your spouse or children will also be approved.
+On the other hand, if you are not approved for asylum, your spouse or children are also not approved.
+
+Part 1. Filing Instructions (continued)
+If you apply for asylum while in proceedings before the Immigration Court, the immigration judge may not have authority to grant asylum to any spouse or child included in your application who is not also in proceedings.
+When including family members in your asylum application, you must submit primary documentary evidence establishing your family relationship for each family member, as described below:
+1. If you are including your spouse in your application, submit a copy of your marriage certificate and proof of termination of any prior marriages.
+2. If you are including any unmarried children under 21 years of age in your application, submit a copy of each child's birth certificate.
+If you do not have and are unable to obtain these documents, you must submit secondary evidence. Secondary evidence includes but is not limited to medical records, religious records, and school records. You may also submit an affidavit from at least one person for each event you are trying to prove. Affidavits may be provided by relatives or others. Persons providing affidavits need not be U.S. citizens or lawful permanent residents.
+Affidavits must:
+1. Fully describe the circumstances or event(s) in question and fully explain how the person acquired knowledge of the event(s);
+2. Be sworn to or affirmed by persons who were alive at the time of the event(s) and have personal knowledge of the event(s) (date and place of birth, marriage, etc.) that you are trying to prove; and
+3. Show the full name, address, and date and place of birth of each person giving the affidavit and indicate any relationship between you and the person giving the affidavit.
+If you submit secondary evidence or affidavits, you must explain why primary evidence (for example, birth or marriage certificate) is unavailable. You may explain the reasons primary evidence is unavailable using Form I-589 Supplement B or additional sheets of paper. Attach this explanation to your secondary evidence or affidavits.
+If you have more than four children, complete Form I-589 Supplement A for each additional child or attach additional pages and documentation providing the same information asked in Part A.II. of Form I-589.
+Part A.III. Information About Your Background Answer Questions 1 - 5, providing details as requested for each question. Your responses to the questions concerning the places you have lived, your education, and your employment history must be in reverse chronological order starting with your current residence, education, and employment and working back in time.
+Form I-589 Instructions 07/28/26
+
+Part B. Information About Your Application
+This part asks specific questions relevant to eligibility for asylum, for withholding of removal under section 241(b)(3) of the Act, or for withholding of removal under the Convention Against Torture. For Question 1, check the box(es) next to the reason(s) that you are completing this application. For all other questions, check "Yes" or "No" in the box provided.
+If you answer "Yes" to any question, explain in detail using Form I-589, Supplement B or additional sheets of paper, as needed.
+You must clearly describe any of your experiences, or those of family members or others who have had similar experiences that may show that you are a refugee.
+USCIS may adjudicate your application without conducting an interview and without issuing a request for evidence. Your application and any supporting evidence that you can provide now may be your only opportunity to meet your burden of proof to establish eligibility for asylum before USCIS.
+If you have experienced harm that is difficult for you to write down and express, you must be aware that these experiences may be very important to the decision-making process regarding your request to remain in the United States, and your application may be your only opportunity to describe your experience to an asylum officer. At any scheduled interview with an asylum officer or hearing with an immigration judge, you will need to be prepared to discuss the harm you have suffered. If you are having trouble remembering or talking about past events, we suggest that you talk to a lawyer, an accredited representative, or a health professional who may be able to help you explain your experiences and current situation.
+Part C. Additional Information About Your Application
+Check "Yes" or "No" in the box provided for each question. If you answer "Yes" to any question, explain in detail using Form I-589 Supplement B or additional sheets of paper, as needed.
+You should ensure that your explanations are complete and detailed. An asylum officer may adjudicate your application without conducting an interview or requesting additional evidence.
+If you answer "Yes" to Question 5, you must explain why you did not apply for asylum within the first year after you arrived in the United States. The Government will accept as an explanation certain changes in the conditions in your country, certain changes in your own circumstances, and certain other events that may have prevented you from applying earlier.
+
+Part 1. Filing Instructions (continued)
+For example, some of the events the Government might consider as valid explanations include but are not limited to the following:
+1. You have learned that human rights conditions in your country have worsened since you left;
+2. Because of your health, you were not able to submit this application within 1 year after you arrived;
+3. You previously submitted an application, but it was returned to you because it was not complete, and you submitted a complete application within a reasonable amount of time.
+If applicable, include with your application any proof of class membership in the Ms. L. Settlement Agreement, which includes specific accommodations with respect to the one-year filing deadline for class members who meet certain settlement-related deadlines. See Ms. L., et al. v. ICE, Case No. 18-cv-00428 (S.D. Cal.) (2023).
+Federal regulations specify some of the other types of events that may also qualify as valid explanations for why you filed late. These regulations are found at 8 CFR sections 208.4 and 1208.4. These regulations also explain your burden of proof. The list in the regulations is not all-inclusive, and the Government recognizes that there are many other circumstances that might be acceptable reasons for filing more than 1 year after arrival.
+If you are unable to explain why you did not apply for asylum within the first year after you arrived in the United States or your explanation is not accepted by the Government, you may not be eligible to apply for asylum, but you could still be eligible for withholding of removal under INA section 241(b)(3), or for protection from removal under the Convention Against Torture.
+Part D. Your Signature
+You must sign your application in Part D and respond to the questions concerning any assistance you received to complete your application, providing the information requested. Sign after you have completed and reviewed the application.
+If it is determined that you have knowingly made a frivolous application for asylum, you can be permanently ineligible for any benefits under the INA. (See section 208(d)(6) of the INA.)
+According to regulations at 8 CFR sections 208.20 and 1208.20, an application is frivolous if any of its material elements is deliberately fabricated. (See Section IV, Right to Counsel, in Part 1 of these instructions if you have any questions.) You may not avoid a frivolous finding simply because someone advised or told you to provide false information on your asylum application.
+
+Part E. Declaration of Person Preparing Form, if Other Than Applicant, Spouse, Parent, or Child
+Any person, other than an immediate family member (your spouse, parent(s) or children), who helped prepare your application must sign the application in Part E and provide the information requested.
+Penalty for Perjury
+All statements in response to questions contained in this application are declared to be true and correct under penalty of perjury. You and anyone, other than an immediate family member, who assists you in preparing the application must sign the application under penalty of perjury. Your signature is evidence that you are aware of the contents of this application. Any person assisting you in preparing this application, other than an immediate family member, must include his or her name, address, and telephone number and sign the application where indicated in Part E.
+Failure of the preparer to sign will result in the application being returned to you as an incomplete application.
+If USCIS or EOIR later learns that you received assistance from someone other than an immediate family member and the person who assisted you willfully failed to sign the application, this may result in an adverse ruling against you.
+Title 18, United States Code (U.S.C.), section 1546(a), provides in part:
+Whoever knowingly makes under oath, or as permitted under penalty of perjury under section 1746 of title 28, knowingly subscribes as true, any false statement with respect to a material fact in any application, affidavit, or other document required by the immigration laws or regulations prescribed thereunder, or knowingly presents any such application, affidavit, or other document containing any such false statement shall be fined in accordance with this title or imprisoned not more than 10 years, or both.
+If aggravating factors exist, the maximum term of imprisonment could reach 25 years.
+If you knowingly provide false information on this application, you or the preparer of this application may be subject to criminal penalties under title 18 of the U.S.C. and to civil penalties under section 274C of the INA, 8 U.S.C. 1324c (see 8 CFR parts 270 and 1270).
+Part F. To Be Completed at Asylum Interview, if Applicable
+Do not sign your application in Part F before filing this form. You will be asked to sign your application in this space at the conclusion of an interview regarding your claim.
+NOTE: You must, however, sign Part D of the application.
+
+Form I-589 Instructions 07/28/26
+
+Part 1. Filing Instructions (continued)
+Part G. To Be Completed at Removal Hearing, if Applicable
+Do not sign your application in Part G before filing this form. You will be asked to sign your application in this space at the hearing before the immigration judge.
+NOTE: You must, however, sign Part D of the application.
+You are reminded again that, if is determined that you have knowingly made a frivolous application for asylum, you may be permanently ineligible for any benefits under the INA. (See section 208(d)(6) of the INA.)
+According to regulations at 8 CFR sections 208.20 and 1208.20, an application is frivolous if any of its material elements is deliberately fabricated. Again, note that you may not avoid a frivolous finding simply because someone advised or told you to provide false information on your asylum application.
+VI. Required Documents That You Must Submit With Your Application
+You must submit the following documents to apply for asylum and withholding of removal:
+1. The completed, signed original of your completed application, Form I-589, and the original of any supplementary sheets and supplementary statements. If you choose to submit additional supporting material, see Section VII. Additional Evidence That You Must Submit, in Part 1 of these instructions. You should make and keep an additional copy of the completed application for your own records.
+2. One copy of primary or secondary evidence of relationship, such as birth or school records of your children, marriage certificate, or proof of termination of marriage, for each family member listed in Part A.II. that you are including in your application.
+NOTE: If you submit an affidavit, you must submit original. (For affidavit requirements, see Part A.II in Part 1., Section V. of these instructions.)
+3. One copy of all passports or other travel documents (cover to cover) in your possession and one copy of any U.S. immigration documents, such as a Form I-94, Arrival/Departure Record, for you and each family member included in your application, if you have such documents. Do not submit original passports or travel documents unless specifically requested.
+4. If you have other identification documents (for example, birth certificate, military or national identification card, driver's license, etc.), we recommend that you submit one copy with your application and bring the original(s) with you to any scheduled interview.
+Form I-589 Instructions 07/28/26
+
+Copies. Documents filed with this application should be photocopies. If you choose to send an original document, USCIS or the Immigration Court may keep that original document for its records.
+Translations. If you submit a document with information in a foreign language, you must also submit a full English translation. The translator must sign a certification that the English language translation is complete and accurate, and that he or she is competent to translate from the foreign language into English. The certification must also include the translator's signature, printed name, the signature date, and the translator's contact information
+VII. Additional Evidence That You Must Submit
+You must submit reasonably available corroborative evidence showing (1) the general conditions in the country from which you are seeking asylum, and (2) the specific facts on which you are relying to support your claim.
+If evidence supporting your claim is not reasonably available or you are not providing such corroboration at this time, you must explain why, using Form I-589 Supplement B or additional sheets of paper.
+Supporting evidence may include but is not limited to newspaper articles, affidavits of witnesses or experts, medical and/or psychological records, doctors' statements, periodicals, journals, books, photographs, official documents, or personal statements or live testimony from witnesses or experts.
+If you have difficulty discussing harm you have suffered in the past, you may wish to submit a health professional's report explaining this difficulty.
+VIII. Fee
+See Form G-1055, available at uscis.gov/forms, for specific information about the fees applicable to this form.
+IX. Biometrics, Including Fingerprints and Photographs
+Applicants for asylum are subject to a biometrics check of all appropriate records and other information databases maintained by the Department of Homeland Security, the Department of Justice, and the Department of State.
+You and your eligible spouse or children, regardless of age, listed on your asylum application must provide biometrics to initiate the required background investigations or for identity verification.
+You and your spouse and children will be given instructions on how to complete this requirement. You will be notified in writing of the time and location of the Application Support Center (ASC) where you must go to be fingerprinted and photographed.
+
+Part 1. Filing Instructions (continued)
+If filing with USCIS, unexcused failure to appear for a scheduled appointment or to provide your required biometrics, including fingerprints and photograph, or to provide other biographical information within the time allowed, may delay employment authorization and/or result in an asylum officer dismissing your asylum application or referring it to an immigration judge. For applicants before an immigration judge, such failure without good cause may constitute an abandonment of your asylum application and result in the denial of employment authorization. (See 8 CFR sections 208.7(a)(1)(v) and 1003.47(d)).
+X. Organizing Your Application
+Organize your application together in the following order, forming one complete package (if possible, secure with binder clips and rubber bands so that material may be easily separated):
+Your original Form I-589, with all questions completed, and the application signed by you in Part D and signed by any preparer in Part E.
+Behind your original Form I-589, attach in the following order:
+1. One Form G-28, Notice of Entry of Appearance as Attorney or Accredited Representative, signed by you and the attorney or representative, if you are represented by an attorney or representative;
+2. The originals of all supplementary sheets and supplementary statements submitted with your application;
+3. One copy of any additional supporting documentation; and
+4. One copy of the evidence of your relationship to your spouse and unmarried children under 21 years of age that you are including in your application, if any.
+NOTE: Any additional pages submitted should include your printed name (exactly as it appears in Part A.I. of the application), A-Number (if any), signature and date.
+XI. Incomplete Asylum Applications
+An asylum application that is incomplete will be returned to you by mail within 30 days of receipt of the application by USCIS. An application that has not been returned to you within 30 days of having been received by USCIS will be considered complete, and you will receive written acknowledgement of receipt from USCIS.
+The filing of a complete application starts the 150-day period you must wait before you may apply for employment authorization. If your application is not complete and is returned to you, the 150-day period will not begin until you resubmit a complete application. (See Part 2 Section V, Employment Authorization While Your Application Is Pending of these instructions for further information regarding eligibility for employment authorization.)
+Form I-589 Instructions 07/28/26
+
+An application will be considered incomplete in each of the following cases:
+1. The application does not include a response to each of the questions contained in Form I-589;
+2. The application is unsigned; or
+3. You indicated in Part D that someone prepared the application other than yourself or an immediate family member and the preparer failed to complete Part E of the asylum application.
+XII. Where to File?
+Although USCIS will confirm in writing its receipt of your application, you may wish to send the completed forms by registered mail (return receipt requested) for your own records.
+If you are not in proceedings in Immigration Court or before the Board of Immigration Appeals:
+Mail your completed Form I-589 and any other additional information as indicated on the USCIS website: uscis.gov/i-589.
+If you are in proceedings in Immigration Court, unless you are filing as an unaccompanied alien child (UAC):
+If you are currently in proceedings in Immigration Court (that is, if you have been served with Form I-221, Order to Show Cause and Notice of Hearing; Form I-122, Notice to Applicant for Admission Detained for Hearing Before Immigration Judge; Form I-862, Notice to Appear; or Form I-863, Notice of Referral to Immigration Judge), you are required to file your Form I-589 with the Immigration Court having jurisdiction over your case.
+If you are in removal proceedings, counsel for DHS will provide you with instructions for biometrics collection. These instructions may also be obtained at uscis.gov/laws/ immigration-benefits-eoir-removal-proceedings.
+Special Filing Instructions for an Unaccompanied Alien Child (UAC)
+If you are a child in removal proceedings and filing as a UAC, mail your completed application package as indicated on the USCIS website: uscis.gov/i-589.
+If you received an instruction sheet from Counsel for DHS when you attended a hearing in Immigration Court, or if you have a copy of documentation provided by the Department of Health and Human Services, Office of Refugee Resettlement (ORR) showing that you are, or that you were in ORR custody as a UAC, such as the UAC Initial Placement Referral Form or the ORR Verification of Release Form, please submit those documents with your application package as well.
+If you are a UAC but you are not in removal proceedings, please submit your Form I-589 application package as directed below in the discussion entitled, "If you are not in proceedings in Immigration Court or before the Board of Immigration Appeals."
+
+Part 1. Filing Instructions (continued)
+If you are in proceedings before the Board of Immigration Appeals:
+You may file your Form I-589 with the Board of Immigration Appeals in conjunction with a motion to remand or reopen under 8 CFR 1003.2 and 1003.8. You may file an initial Form I-589 with the Board of Immigration Appeals only if the Board of Immigration Appeals has jurisdiction over your case. Any such motion must reasonably explain the failure to request asylum and/or withholding of removal prior to the completion of the proceedings.
+Information concerning asylum offices and where to file asylum applications is also available on the USCIS website at uscis.gov.
+If you previously applied for and were denied asylum by USCIS or if you were previously included in a spouse's or parent's pending application but you are no longer eligible to be included as a dependent, mail your completed Form I-589 as indicated on the USCIS website: uscis.gov/i-589. Include a letter with your application stating that you previously applied for asylum and were denied or that you are now filing independently for asylum. Reference in the letter the application on which you were a dependent.
+USCIS will not adjudicate asylum applications filed by the following categories of individuals:
+1. Certain alien crewmembers;
+2. Certain stowaways;
+3. Visa Waiver Program applicants for admission;
+4. Visa Waiver Program overstays and status violators;
+5. Certain aliens ordered removed under section 235(c) of the INA on security-related grounds; and
+6. Aliens granted S nonimmigrant status under section 101(a)(15)(S) of the INA (such as witnesses and informants).
+Individuals subject to these special categories who file asylum applications with USCIS will be served with Form I-863, Notice of Referral to Immigration Judge, and will be referred to Immigration Court for an asylum-only hearing.
+If you are an alien crewmember in custody and you have been given Form I-589 as well as information about the privilege of being represented by counsel and the consequences of knowingly filing a frivolous asylum application, you have 10 days within which to submit your completed Form I-589 to the U.S. Immigration and Customs Enforcement (ICE) Field Office Director having jurisdiction over the Port of Entry at which your vessel arrived. The Field Office Director may extend the 10-day filing period for good cause. Once you file your application, the Field Office Director will serve you with Form I-863 and immediately forward your application to the appropriate Immigration Court.
+
+Part 2. Information Regarding Post-Filing Requirements
+I. Notification Requirements When Your Address Changes
+If you change your address, you must inform USCIS in writing within 10 days of moving.
+While your asylum application is pending with the asylum office, you must notify the asylum office on Form AR-11, Alien's Change of Address Card, or by a signed and dated letter notifying USCIS within 10 days after you change your address.
+The address that you provide on the application, or the last change of address notification that you submitted, will be used by USCIS for mailing. Any notices mailed to that address will constitute adequate service, except that personal service may be required for the following: Form I-122, Notice to Alien Detained for Hearing by Immigration Judge; Form I-221, Order to Show Cause; Form I-862, Notice to Appear; Form I-863, Notice of Referral to Immigration Judge; and Form I-860, Notice and Order of Expedited Removal.
+If you are already in proceedings in Immigration Court, you must notify the Immigration Court on EOIR Form 33/IC, Alien Change of Address Form/Immigration Court, of any changes of address within 5 days of the change in address. You must send the notification to the Immigration Court having jurisdiction over your case. You must also notify USCIS on Form AR-11, Alien's Change of Address Card, or by a signed and dated letter within 10 days after you change your address.
+II. Referral Without Interview
+USCIS may refer your application without conducting an interview or issuing a request for evidence.
+If USCIS has jurisdiction over your asylum application, USCIS will determine whether to schedule you for an asylum interview.
+See Section III. Asylum Interview Procedures, if Applicable, for information about asylum interviews.
+A decision to schedule you for an asylum interview is not an adjudication of your application or a determination that you have met your burden of proof on eligibility.
+If you fail to submit evidence that overcomes the reason(s) for ineligibility, you may not be scheduled for an interview, and your application may be referred to an immigration judge based on the existing record and evidence.
+
+Form I-589 Instructions 07/28/26
+
+Part 2. Information Regarding Post-Filing Requirements (continued)
+III. Asylum Interview Procedures, if Applicable
+If USCIS decides to conduct an asylum interview about your application, you will be notified by the USCIS Asylum Office of the time, date, and place (address) of any scheduled interview.
+If you are scheduled for an interview, USCIS recommends that you bring a copy of your Form I-589 with you when you have your asylum interview. An asylum officer will interview you under oath and make a determination concerning your claim. In most cases, you will not be notified of the decision in your case until a date after your interview.
+You have the right to legal representation at your interview, at no cost to the U.S. Government. (See Section IV, Right to Counsel.) You also may bring witnesses with you to the interview to testify on your behalf.
+If you are unable to proceed with the asylum interview in fluent English, you must provide, at no expense to USCIS, a competent interpreter fluent in both English and a language that you speak fluently.
+Your interpreter must be at least 18 years of age. The following persons cannot serve as your interpreter: your attorney or representative of record, a witness testifying on your behalf at the interview, or a representative or employee of your country. Quality interpretation may be crucial to your claim. This assistance must be obtained at your expense prior to the interview.
+Failure without good cause to bring a competent interpreter to your interview may be considered an unexcused failure to appear for the interview. Any unexcused failure to appear for an interview may prevent you from receiving employment authorization, and your asylum application may be dismissed or referred directly to the Immigration Court.
+If you are deaf, or if you are hard of hearing and need a sign language interpreter in your language, one will be provided for you. Contact the Asylum Office with jurisdiction over your case as soon as you receive a notice for your asylum interview to notify the office that you will need a sign language interpreter in your language so that accommodations can be made in advance.
+If available, you must bring some form of identification to your interview, including any passport(s), other travel or identification documents, or Form I-94, Arrival/Departure Record. You may bring to the interview any additional available items documenting your claim that you have not already submitted with your application.
+If members of your family are included in your application for asylum, they must also appear for the interview and bring any identity or travel documents they have in their possession.
+Form I-589 Instructions 07/28/26
+
+IV. Status While Your Application Is Pending
+While your case is pending, you will be permitted to remain in the United States. After adjudication of your application, if you have not been granted asylum and appear to be removable under section 237 of the INA, 8 U.S.C. 1227, or inadmissible under section 212 of the INA, 8 U.S.C. 1182, the asylum office will refer your application, together with the appropriate charging document, to the Immigration Court for adjudication in removal proceedings.
+V. Travel Outside the United States
+If you leave the United States without first obtaining advance parole from USCIS using Form I-131, Application for Travel Documents, Parole Documents, and Arrival/Departure Records, we will presume that you have abandoned your application. If you obtain advance parole and return to the country of claimed persecution, we will presume that you abandoned your asylum application, unless you can show that there were compelling reasons for your return.
+NOTE: The application process for advance parole varies depending on your personal circumstances. Use InfoPass on the USCIS website to check with your local USCIS District Office for application instructions. Additional information on obtaining advance parole is available from the USCIS website at uscis.gov.
+VI. Employment Authorization While Your Application Is Pending
+You will be granted permission to work if your asylum application is granted.
+Simply filing an application for asylum does not entitle you to employment authorization. You may request permission to work if your asylum application is pending and 150 days have lapsed since your application was accepted by USCIS or the Immigration Court. (See 8 CFR sections 208.7(a)(1) and 1208.7(a)(1).) Any delay in the processing of your asylum application that you request or cause will not be counted as part of the 150-day period.
+If your asylum application has not been denied within 180 days from the date of filing a complete asylum application, you may be granted permission to work by filing Form I-765, Application for Employment Authorization, with USCIS. Follow the instructions on that application and submit it with a copy of evidence as specified in the instructions that you have a pending asylum application.
+Each family member whom you have asked to be included in your application and who also wants permission to work must submit a separate Form I-765.
+You may obtain copies of Form I-765 by calling the USCIS Contact Center at 1-800-375-5283 or from the USCIS website at uscis.gov.
+
+DHS Privacy Notice
+AUTHORITIES: The information requested on this application, and the associated evidence, is collected under the Immigration and Nationality Act sections 208 and 241(b)(3).
+PURPOSE: The primary purpose for providing the requested information on this form is to determine eligibility for asylum in the United States, and for withholding of removal. The information may also be used to apply for deferral of removal under the Convention Against Torture.
+DISCLOSURE: The information you provide is voluntary. However, failure to provide the requested information, and any requested evidence, may delay a final decision or result in the denial of your benefit request.
+ROUTINE USES: DHS may share the information you provide on this benefit application with other federal, state, local, and foreign government agencies and authorized organizations. DHS follows approved routine uses described in the associated published system of records notices [DHS/ USCIS-001 - Alien File, Index, and National File Tracking and DHS/USCIS-010 - Asylum Information and PreScreening] which you can find at dhs.gov/privacy and EOIR-001, Records Management Information System, 69 Fed. Reg 26, 179 (May 11, 2004) or its successors. DHS may also share the information, as appropriate, for law enforcement purposes or in the interest of national security.
+USCIS Forms and Information
+You can get USCIS forms and immigration-related information on the USCIS website at uscis.gov. If you do not have internet access, you may order USCIS forms by calling the USCIS Contact Center at 1-800-375-5283. (For TTY (deaf or hard of hearing) call: 1-800-767-1833).
+Additional information concerning asylum and withholding of removal is available on the USCIS website at uscis.gov/asylum and the EOIR website at usdoj.gov/eoir.
+
+Penalties
+If you knowingly and willfully falsify or conceal a material fact or submit a false document with Form I-589, we will deny your Form I-589 and may deny any other immigration benefit.
+In addition, you will face severe penalties provided by law and may be subject to criminal prosecution.
+For specific information, see Part E in Part 1, Section V, of these instructions.
+Paperwork Reduction Act
+An agency may not conduct or sponsor an information collection and a person is not required to respond to a collection of information unless it displays a currently valid OMB control number. The public reporting burden for this collection of information is estimated at 11 hours per response, including the time for reviewing instructions, and completing and submitting the form. Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing this burden to: U.S. Citizenship and Immigration Services, Office of Policy & Strategy, Regulatory Coordination Division, 5900 Capital Gateway Drive, Mail Stop #2140, Camp Springs, MD 20588-0009; OMB No. 1615-0067. Do not mail your completed Form I-589 to this address.
+Supplements to Form I-589
+Form I-589, Supplement A - For use to complete Part A.II.
+Form I-589, Supplement B - For use to complete Parts B and C and to provide additional information for any other part of the application.
+
+Form I-589 Instructions 07/28/26
+
+

@@ -1,0 +1,48 @@
+{
+  "id": "i-485",
+  "name": "I-485 Adjustment of Status",
+  "summary": "Stand-alone adjustment of status when the underlying petition (I-130, I-140, I-360 or other basis) is already filed or approved.",
+  "confidential": false,
+  "forms": [
+    { "form": "I-485", "title": "Application to Register Permanent Residence or Adjust Status", "edition": "09/18/26", "role": "main", "source": "i-485instr.txt" },
+    { "form": "I-485 Supplement J", "title": "Confirmation of Valid Job Offer or Request for Job Portability", "edition": "verify on uscis.gov/i-485supj", "role": "conditional", "when": { "question": "basis", "equals": "Employment - approved I-140 with job offer" }, "note": "Required for job-offer EB categories after I-140 approval (I-485 instructions, item 8). Not for NIW or EB-1A." },
+    { "form": "I-864", "title": "Affidavit of Support", "edition": "verify on uscis.gov/i-864", "role": "conditional", "when": { "question": "basis", "equals": "Family petition" } },
+    { "form": "I-693", "title": "Report of Immigration Medical Examination", "edition": "civil surgeon completes", "role": "companion", "note": "Submit with the I-485 or it may be rejected (item 9)." },
+    { "form": "I-765", "title": "Application for Employment Authorization", "edition": "verify on uscis.gov/i-765", "role": "optional", "when": { "question": "wantsEad", "equals": "Yes" } },
+    { "form": "I-131", "title": "Application for Travel Documents", "edition": "verify on uscis.gov/i-131", "role": "optional", "when": { "question": "wantsAdvanceParole", "equals": "Yes" } }
+  ],
+  "filing": { "where": "See 'Where To File' on uscis.gov/i-485; the address depends on the filing category.", "fee": "See Form G-1055 at uscis.gov/g-1055." },
+  "blocks": ["applicant", "address", "entry", "biographic", "family", "employment", "criminal"],
+  "questions": [
+    { "section": "Basis for your green card", "id": "basis", "label": "What is your green card based on?", "type": "select", "options": ["Family petition", "Employment - approved I-140 with job offer", "Employment - NIW or extraordinary ability", "Special immigrant (I-360)", "VAWA self-petition", "Asylee or refugee", "T nonimmigrant", "Other"], "required": true },
+    { "section": "Basis for your green card", "id": "underlyingReceipt", "label": "Receipt number of the underlying petition (I-130, I-140, I-360, etc.)", "type": "text" },
+    { "section": "Basis for your green card", "id": "priorityDate", "label": "Priority date (if any)", "type": "date" },
+    { "section": "Basis for your green card", "id": "wasJ1", "label": "Have you ever held J-1 or J-2 exchange visitor status?", "type": "yesno", "required": true },
+    { "section": "Basis for your green card", "id": "wantsEad", "label": "Do you want a work permit (I-765) while pending?", "type": "yesno" },
+    { "section": "Basis for your green card", "id": "wantsAdvanceParole", "label": "Do you need travel permission (I-131) while pending?", "type": "yesno" }
+  ],
+  "checklist": [
+    { "id": "photos", "label": "2 identical color passport-style photos (2x2 in)", "required": true, "source": "I-485 Instructions 09/18/26, item 1" },
+    { "id": "id_document", "label": "Government-issued photo ID (passport even if expired, driver's license, military ID)", "required": true, "source": "I-485 Instructions 09/18/26, item 2" },
+    { "id": "birth_certificate", "label": "Birth certificate from the civil authority (listing at least one parent)", "required": true, "source": "I-485 Instructions 09/18/26, item 3" },
+    { "id": "inspection_admission", "label": "Proof of last entry: passport admission or parole stamp, visa page, I-94", "required": true, "help": "Not needed for asylees, VAWA self-petitioners, SIJ, T or U applicants, and 245(i) cases.", "when": { "question": "basis", "notIn": ["Asylee or refugee", "VAWA self-petition", "T nonimmigrant"] }, "source": "I-485 Instructions 09/18/26, item 4" },
+    { "id": "underlying_notice", "label": "I-797 receipt or approval notice for the underlying petition", "required": true, "source": "I-485 Instructions 09/18/26, item 5" },
+    { "id": "relationship_docs", "label": "Marriage certificate and proof prior marriages ended (if a derivative spouse)", "required": false, "source": "I-485 Instructions 09/18/26, item 6" },
+    { "id": "lawful_status_history", "label": "Proof of lawful status since arrival (all I-797s, I-94s, I-20s, DS-2019s)", "required": true, "when": { "question": "basis", "in": ["Family petition", "Employment - approved I-140 with job offer", "Employment - NIW or extraordinary ability"] }, "source": "I-485 Instructions 09/18/26, item 7" },
+    { "id": "medical_i693", "label": "Sealed Form I-693 from a civil surgeon", "required": true, "source": "I-485 Instructions 09/18/26, item 9" },
+    { "id": "arrest_records", "label": "Certified police and court records for every arrest, charge or conviction", "required": true, "when": { "question": "everArrested", "equals": "Yes" }, "source": "I-485 Instructions 09/18/26, item 10" },
+    { "id": "j1_documents", "label": "All DS-2019 / IAP-66 forms, J visas, I-94s, and proof the 2-year home residence rule is met or waived", "required": true, "when": { "question": "wasJ1", "equals": "Yes" }, "source": "I-485 Instructions 09/18/26, item 12" },
+    { "id": "sponsor_financials", "label": "Sponsor tax return or transcript, W-2s, pay stubs (for I-864)", "required": true, "when": { "question": "basis", "equals": "Family petition" }, "source": "I-485 Instructions 09/18/26, Affidavit of Support" }
+  ],
+  "coverLetter": {
+    "re": "Form I-485, Application to Register Permanent Residence or Adjust Status",
+    "request": "We respectfully submit the enclosed Form I-485 on behalf of {{givenName}} {{familyName}}, based on: {{basis}}.",
+    "points": [
+      "The applicant is eligible for adjustment in the stated category, as shown by the enclosed underlying notice.",
+      "The applicant was inspected and admitted or paroled, or is exempt from that requirement.",
+      "The required medical examination and supporting civil documents are enclosed."
+    ]
+  },
+  "rules": ["visaBulletinNote"],
+  "assemblyOrder": ["cover_letter", "forms", "exhibit_index", "exhibits"]
+}

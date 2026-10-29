@@ -1,0 +1,256 @@
+{
+  "id": "YjosxmDB6JL1UtxI",
+  "name": "2A - Petition assembly",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "assemble-petition",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "b1d5f8e0-0001-4a00-9000-000000000001",
+      "name": "Assemble request",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "2a-assemble-petition"
+    },
+    {
+      "parameters": {
+        "url": "=__API_BASE__/api/cases/{{ $json.body.caseId }}/validate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b1d5f8e0-0002-4a00-9000-000000000002",
+      "name": "Validate case",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.ready }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "b1d5f8e0-0003-4a00-9000-000000000003",
+      "name": "Ready to build?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=__API_BASE__/api/cases/{{ $json.caseId }}/assemble",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{ \"force\": false }",
+        "options": {}
+      },
+      "id": "b1d5f8e0-0004-4a00-9000-000000000004",
+      "name": "Build package (forms, cover letter, exhibits, one PDF)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { built: true, caseId: $json.caseId, version: $json.package.version, pages: $json.package.pageCount, status: 'Draft waiting for attorney approval in the dashboard' } }}",
+        "options": {}
+      },
+      "id": "b1d5f8e0-0005-4a00-9000-000000000005",
+      "name": "Reply: built",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        960,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Turn missing items into a plain-language message for the client.\nconst v = $input.first().json;\n// Staff-only items (for example country conditions research) are never sent to the client.\nconst docs = v.missingDocuments.filter(d => !d.staffOnly).map(d => '- ' + d.label);\nconst answers = v.missingAnswers.length ? ['- ' + v.missingAnswers.length + ' question(s) in \"My information\"'] : [];\nconst text = ['Hello! To prepare your filing we still need:', ...docs, ...answers, 'You can upload documents and answer questions in your portal. Thank you!'].join('\\n');\nreturn [{ json: { caseId: v.caseId, text, missingDocuments: v.missingDocuments, missingAnswers: v.missingAnswers, errors: v.errors } }];"
+      },
+      "id": "b1d5f8e0-0006-4a00-9000-000000000006",
+      "name": "Write missing-items message",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=__API_BASE__/api/automation/cases/{{ $json.caseId }}/message",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-automation-key",
+              "value": "__AUTOMATION_KEY__"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { text: $json.text, kind: 'missing-items' } }}",
+        "options": {}
+      },
+      "id": "b1d5f8e0-0007-4a00-9000-000000000007",
+      "name": "Message client in portal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        960,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { built: false, caseId: $('Write missing-items message').item.json.caseId, errors: $('Write missing-items message').item.json.errors, missingDocuments: $('Write missing-items message').item.json.missingDocuments } }}",
+        "options": {}
+      },
+      "id": "b1d5f8e0-0008-4a00-9000-000000000008",
+      "name": "Reply: not ready",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1200,
+        420
+      ]
+    }
+  ],
+  "connections": {
+    "Assemble request": {
+      "main": [
+        [
+          {
+            "node": "Validate case",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate case": {
+      "main": [
+        [
+          {
+            "node": "Ready to build?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ready to build?": {
+      "main": [
+        [
+          {
+            "node": "Build package (forms, cover letter, exhibits, one PDF)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Write missing-items message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build package (forms, cover letter, exhibits, one PDF)": {
+      "main": [
+        [
+          {
+            "node": "Reply: built",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write missing-items message": {
+      "main": [
+        [
+          {
+            "node": "Message client in portal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message client in portal": {
+      "main": [
+        [
+          {
+            "node": "Reply: not ready",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/New_York"
+  },
+  "pinData": {}
+}
